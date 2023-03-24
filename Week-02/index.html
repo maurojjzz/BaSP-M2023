@@ -7,186 +7,116 @@
     <title>Mega Rocket</title>
 </head>
 <body>
-    
+
     <header>
-        <img src="./assets/images/radiumrocketlogo.png" alt="LOGO Radium Rocket"/>
-        <h1>Mega Rocket</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">Features</a> </li>
-                <li><a href="#">Contact Us</a> </li>
-                <li><a href="#">Activities</a> </li>
-                <li><a href="#">Our Story</a> </li>
-            </ul>
-        </nav>
-
-        <form >
-            <button type="submit" name="login" value="Login">
-                LOGIN
-                <img class="" src="./assets/images/login-icon.png" alt="login logo">
-            </button>
-        </form>
-
-        <form action="#">
-            <button type="submit" name="sign-in" value="sign-in">
-                SIGN IN
-                <img src="./assets/images/signup-icon.png" alt="user.png" />
-            </button>
-        </form>
-        
+        <img src="/Assets/Images/radiumrocketlogo.png" alt="LOGO Radium Rocket"/>
+        <h1>Mega Rocket</h1>    
     </header>
 
+    <nav>
+        <a href="#">Home</a> 
+        <a href="#">Features</a> 
+        <a href="#">Contact Us</a>
+        <a href="#">Activities</a> 
+        <a href="#">Our Story</a> 
+        <form>
+            <button type="submit" name="login" value="Login">
+                LOGIN
+                <img class="" src="/Assets/Images/login-icon.png" alt="login logo">
+            </button>
+        </form>
+        <form>
+            <button type="submit" name="sign-in" value="sign-in">
+                SIGN IN
+                <img src="/Assets/Images/signup-icon.png" alt="user.png" />
+            </button>
+        </form>
+    </nav>
+
     <main>
-        <section
-            <article class="home">
-                <div class="collage">
-                    <img src="./assets/images/dont-sit1.jpg" alt="man exercising">
-                    <img src="./assets/images/dont'sit2.jpg" alt="man and woman posing">
-                    <img src="./assets/images/dont'sit3.jpg" alt="women exercising">
-                </div>
-                <div class="subtitle-home">
-                   <h2>DON'T SIT</h2>
-                    <h2>GET FIT</h2> 
-                </div>
-                
-            </article>
-
-            <article>
-
-                <div class="subtitle-features">
-                    <h2>FEATU</h2>
-                    <h2>RES</h2>
-                </div>
-                
-                <div class="cuadro">
-
-                    <div>
-                        <img src="./assets/images/reservation-pic.png" alt="reservations image">
-                        <h3>RESERVATIONS</h3>
-                        <p>lorem magna fringilla urna</p> 
-                        <p>porttitor rhoncus dolor purus</p>
-                    </div>
-
-                    <div>
-                        <img src="./assets/images/schedule-pic.jpg" alt="schedule image">
-                        <h3>SCHEDULE</h3>
-                        <p>Monday to Saturday</p> 
-                        <p>08 am till 20 pm</p>
-                    </div>
-
-                    <div>
-                        <img src="./assets/images/membership-pic.jpg" alt="membership image">
-                        <h3>MEMBERSHIPS</h3>
-                        <p>lorem magna fringilla urna</p> 
-                        <p>porttitor rhoncus dolor purus</p>
-                    </div>
-
-                    <div>
-                        <img src="./assets/images/conttact-pic.png" alt="contact and suggestions image">
-                        <h3>CONTACT AND SUGGESTIONS</h3>
-                        <p>lorem magna fringilla urna</p> 
-                        <p>porttitor rhoncus dolor purus</p>
-                    </div>
-
-                </div>
-
-            </article>
-
-            <article>
-                <div class="subtitle-contactus">
-                    <h2>CONTACT</h2>
-                    <h2>US</h2>
-                </div>
-
-                <form action="#">
+            <section class="home">
+                <img src="/Assets/Images/dont-sit1.jpg" alt="man exercising">
+                <img src="/Assets/Images/dont'sit2.jpg" alt="man and woman posing">
+                <img src="/Assets/Images/dont'sit3.jpg" alt="women exercising">
+                <h2>DON'T SIT</h2>
+                <h2>GET FIT</h2> 
+            </section>
+            <section class="features">
+                <h2>FEATU</h2>
+                <h2>RES</h2>
+                <img src="/Assets/Images/reservation-pic.png" alt="reservations image">
+                <h3>RESERVATIONS</h3>
+                <p>lorem magna fringilla urna</p> 
+                <p>porttitor rhoncus dolor purus</p>
+                <img src="/Assets/Images//schedule-pic.jpg" alt="schedule image">
+                <h3>SCHEDULE</h3>
+                <p>Monday to Saturday</p> 
+                <p>08 am till 20 pm</p>
+                <img src="/Assets/Images/membership-pic.jpg" alt="membership image">
+                <h3>MEMBERSHIPS</h3>
+                <p>lorem magna fringilla urna</p> 
+                <p>porttitor rhoncus dolor purus</p>
+                <img src="/Assets/Images/conttact-pic.png" alt="contact and suggestions image">
+                <h3>CONTACT AND SUGGESTIONS</h3>
+                <p>lorem magna fringilla urna</p> 
+                <p>porttitor rhoncus dolor purus</p>
+            </section>
+            <section class="contact-us">
+                <h2>CONTACT</h2>
+                <h2>US</h2>
+                <form>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
-
                     <label for="surname">Surname</label>
                     <input type="text" name="surname" id="surname">
-
                     <label for="mail">E-Mail</label>
                     <input type="text" name="mail" id="mail">
-
                     <label for="contact-reason">Contact reason</label>
                     <select name="contact-reason" id="contact-reason">
-                        <option value="choose" selected>Choose one</option>
+                        <option value="choose" selected disabled>Choose one</option>
                         <option value="costs">I want to know the memberships and costs</option>
                         <option value="query">I want to make a query or suggestion</option>
                         <option value="claim">I want to make a claim</option>
                     </select>
-
+                    <button type="submit">SEND</button>
                 </form>
-            </article>
-
-            <article>
-                <div class="subtitle-memberships">
-                    <h2>MEMBER</h2>
-                    <h2>SHIPS</h2>
-                </div>
-
-                <div>
-                    <img src="./assets/images/onlyclasses.png" alt="only classes membership image">
-                    <h3>ONLY CLASSES MEMBERSHIPS</h3>
-                    <ul>
-                        <li>FREE ACCESS TO CLASSES WITH REGISTRATION</li>
-                        <li>SCHEDULE VIEW</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <img src="./assets/images/CLASSICMEMBERSHIP.png" alt="classic membership image">
-                    <h3>CLASSICC MEMBERSHIP</h3>
-                    <ul>
-                        <li>FREE ACCESS TO THE GYM</li>
-                        <li>PERSONALIZED MONITORING & COACHING</li>
-                        <li>SCHEDULE VIEW</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <img src="./assets/images/blackmemeb.png" alt="black membership image">
-                    <h3>CLASSICC MEMBERSHIP</h3>
-                    <ul>
-                        <li>FREE ACCESS TO THE GYM</li>
-                        <li>FREE ACCESS TO CLASSES WITH REGISTRATION</li>
-                        <li>PERSONALIZED MONITORING & COACHING</li>
-                        <li>SCHEDULE VIEW</li>
-                    </ul>
-                </div>
-
-            </article>
-        </section>
-
+            </section>
+            <section class="memberships">
+                <h2>MEMBER</h2>
+                <h2>SHIPS</h2>
+                <img src="/Assets/Images/onlyclasses.png" alt="only classes membership image">
+                <h3>ONLY CLASSES MEMBERSHIPS</h3>
+                <ul>
+                    <li>FREE ACCESS TO CLASSES WITH REGISTRATION</li>
+                    <li>SCHEDULE VIEW</li>
+                </ul>
+                <img src="/Assets/Images/CLASSICMEMBERSHIP.png" alt="classic membership image">
+                <h3>CLASSICC MEMBERSHIP</h3>
+                <ul>
+                    <li>FREE ACCESS TO THE GYM</li>
+                    <li>PERSONALIZED MONITORING & COACHING</li>
+                    <li>SCHEDULE VIEW</li>
+                </ul>
+                <img src="/Assets/Images/blackmemeb.png" alt="black membership image">
+                <h3>CLASSICC MEMBERSHIP</h3>
+                <ul>
+                    <li>FREE ACCESS TO THE GYM</li>
+                    <li>FREE ACCESS TO CLASSES WITH REGISTRATION</li>
+                    <li>PERSONALIZED MONITORING & COACHING</li>
+                    <li>SCHEDULE VIEW</li>
+                </ul>
+            </section>
     </main>
 
     <footer>
-
-        <div>
-            <img src="./assets/images/instagram-logo.png" alt="instagram logo">
-            <p>@ROCKETGYM</p>
-        </div>
-
-        <div>
-            <img src="./assets/images/whatsapp-logo.png" alt="whatsapp logo">
-            <p>+1 408 741 2369</p>
-        </div>
-
-        <div>
-            <img src="./assets/images/facebook-logo.png" alt="facebook logo">
-            <p>Mega Rocket GYM</p>
-        </div>
-
-        <div>
-            <p>MEGA ROCKET SA</p>
-            <p>All rights reserved. 2023 ©</p>
-        </div>
-
-
+        <img src="/Assets/Images/instagram-logo.png" alt="instagram logo">
+        <p>@ROCKETGYM</p>
+        <img src="/Assets/Images/whatsapp-logo.png" alt="whatsapp logo">
+        <p>+1 408 741 2369</p>
+        <img src="/Assets/Images/facebook-logo.png" alt="facebook logo">
+        <p>Mega Rocket GYM</p>
+        <p>MEGA ROCKET SA</p>
+        <p>All rights reserved. 2023 ©</p>
     </footer>
-
-
-
 </body>
 </html>
