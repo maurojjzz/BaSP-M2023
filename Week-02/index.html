@@ -6,64 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mega Rocket</title>
 </head>
-<body>
-    <header>
-        <img src="/Assets/Images/radiumrocketlogo.png" alt="LOGO Radium Rocket"/>
-        <h1>Mega Rocket</h1>
-        <form>
+    <body>
+        <header>
+            <img src="/Assets/Images/radiumrocketlogo.png" alt="LOGO Radium Rocket"/>
+            <h2>Mega Rocket</h2>
             <button type="submit" name="login" value="Login">
-                LOGIN
+                <p>LOGIN</p> 
                 <img class="" src="/Assets/Images/login-icon.png" alt="login logo">
             </button>
-        </form>
-        <form>
             <button type="submit" name="sign-in" value="sign-in">
-                SIGN IN
-                <img src="/Assets/Images/signup-icon.png" alt="user.png" />
+                <p>SIGN IN</p> 
+                <img src="/Assets/Images/signup-icon.png" alt="user.png"/>
             </button>
-        </form>
-    </header>
-    <nav>
-        <a href="#home">Home</a> 
-        <a href="#features">Features</a> 
-        <a href="#contact-us">Contact Us</a>
-        <a href="#activities">Activities</a> 
-        <a href="#memberships">Memberships</a> 
-        <a href="#our-story">Our Story</a> 
-    </nav>
-    <main>
+        </header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#activities">Activities</a> </li>
+                    <li><a href="#memberships">Memberships</a> </li>
+                    <li><a href="#our-story">Our Story</a> </li>
+                </ul>                
+            </nav>
+            <p>Av. Pellegrini  3535 
+                <span>+464 206 96 <span>
+            </p>
+        </aside>
+        <main>
             <section id="home">
                 <img src="/Assets/Images/dont'sit2.jpg" alt="man and woman posing">
-                <h1>MEGA ROCKET GYM</h1>
-                <h2>DON'T SIT</h2>
-                <h2>GET FIT</h2>
-                <p>Your best version is waiting for you, join Mega Rocket Gym today.</p> 
-                <p>In this app you can choose our best personal trainers and the best classes </p>
-                <p>and have a bunch of privileges with our differents memberships</p>
+                <h1>
+                    DON'T SIT 
+                    <span>GET FIT</span>
+                </h1>
+                <p>
+                    Your best version is waiting for you, join Mega Rocket Gym today. 
+                    In this app you can choose our best personal trainers and the best classes 
+                    and have a bunch of privileges with our differents memberships
+                </p>
             </section>
             <section id="features">
-                <h2>FEATU</h2>
-                <h2>RES</h2>
-                <img src="/Assets/Images/reservation-pic.png" alt="reservations image">
-                <h3>RESERVATIONS</h3>
-                <p>lorem magna fringilla urna</p> 
-                <p>porttitor rhoncus dolor purus</p>
-                <img src="/Assets/Images//schedule-pic.jpg" alt="schedule image">
-                <h3>SCHEDULE</h3>
-                <p>Monday to Saturday</p> 
-                <p>08 am till 20 pm</p>
-                <img src="/Assets/Images/membership-pic.jpg" alt="membership image">
-                <h3>MEMBERSHIPS</h3>
-                <p>lorem magna fringilla urna</p> 
-                <p>porttitor rhoncus dolor purus</p>
-                <img src="/Assets/Images/conttact-pic.png" alt="contact and suggestions image">
-                <h3>CONTACT AND SUGGESTIONS</h3>
-                <p>lorem magna fringilla urna</p> 
-                <p>porttitor rhoncus dolor purus</p>
+                <h2>
+                    FEATU
+                    <span>RES</span> 
+                </h2>
+                <article>
+                    <img src="/Assets/Images/reservation-pic.png" alt="reservations image">
+                    <h3>RESERVATIONS</h3>
+                    <p>Choose your favorite class and ensure your place</p>   
+                </article>
+                <article>
+                    <img src="/Assets/Images//schedule-pic.jpg" alt="schedule image">
+                    <h3>SCHEDULE</h3>
+                    <p>Monday to Saturday 08 am till 20 pm</p>   
+                </article>
+                <article>
+                    <img src="/Assets/Images/membership-pic.jpg" alt="membership image">
+                    <h3>MEMBERSHIPS</h3>
+                    <p>Pick which one is best for you</p>    
+                </article>
+                <article>
+                    <img src="/Assets/Images/conttact-pic.png" alt="contact and suggestions image">
+                    <h3>CONTACT AND SUGGESTIONS</h3>
+                    <p>Your opinion is important to us, it helps us improve</p>    
+                </article>  
             </section>
             <section id="contact-us">
-                <h2>CONTACT</h2>
-                <h2>US</h2>
+                <h2>
+                    CONTACT
+                    <span>US</span>
+                </h2>
                 <form>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
@@ -77,66 +91,90 @@
                         <option value="costs">I want to know the memberships and costs</option>
                         <option value="query">I want to make a query or suggestion</option>
                         <option value="claim">I want to make a claim</option>
+                        <option value="other">Other...</option>
                     </select>
+                    <label for="description">Message</label>
+                    <textarea name="description" placeholder="Write here..."></textarea>
                     <button type="submit">SEND</button>
                 </form>
             </section>
             <section id="activities">
-                <h2>ACTIVI</h2>
-                <h2>TIES</h2>
-                <img src="/Assets/Images/crossfit.jpg" alt="crossfit image">
-                <h3>CROSSFIT</h3>
-                <img src="/Assets/Images/box.png" alt="boxing image">
-                <h3>BOX</h3>
-                <img src="/Assets/Images/functional.jpg" alt="functional image">
-                <h3>FUNCTIONAL</h3>
-                <img src="/Assets/Images/Spinning.png" alt="spinning image">
-                <h3>SPINNING</h3>
-                <img src="/Assets/Images/fitness.jpg" alt="fitness image">
-                <h3>FITNESS</h3>
+                <h2>
+                    ACTIVI
+                    <span>TIES</span> 
+                </h2>
+                <article>
+                    <img src="/Assets/Images/crossfit.jpg" alt="crossfit image">
+                    <h3>CROSSFIT</h3>
+                </article>
+                <article>
+                    <img src="/Assets/Images/box.png" alt="boxing image">
+                    <h3>BOX</h3>                    
+                </article>
+                <article>
+                    <img src="/Assets/Images/functional.jpg" alt="functional image">
+                    <h3>FUNCTIONAL</h3>                    
+                </article>
+                <article>
+                    <img src="/Assets/Images/Spinning.png" alt="spinning image">
+                    <h3>SPINNING</h3>                   
+                </article>
+                <article>
+                    <img src="/Assets/Images/fitness.jpg" alt="fitness image">
+                    <h3>FITNESS</h3>                   
+                </article>
             </section>
             <section id="memberships">
-                <h2>MEMBER</h2>
-                <h2>SHIPS</h2>
-                <img src="/Assets/Images/onlyclasses.png" alt="only classes membership image">
-                <h3>ONLY CLASSES MEMBERSHIPS</h3>
-                <ul>
-                    <li>FREE ACCESS TO CLASSES WITH REGISTRATION</li>
-                    <li>SCHEDULE VIEW</li>
-                </ul>
-                <img src="/Assets/Images/CLASSICMEMBERSHIP.png" alt="classic membership image">
-                <h3>CLASSICC MEMBERSHIP</h3>
-                <ul>
-                    <li>FREE ACCESS TO THE GYM</li>
-                    <li>PERSONALIZED MONITORING & COACHING</li>
-                    <li>SCHEDULE VIEW</li>
-                </ul>
-                <img src="/Assets/Images/blackmemeb.png" alt="black membership image">
-                <h3>CLASSICC MEMBERSHIP</h3>
-                <ul>
-                    <li>FREE ACCESS TO THE GYM</li>
-                    <li>FREE ACCESS TO CLASSES WITH REGISTRATION</li>
-                    <li>PERSONALIZED MONITORING & COACHING</li>
-                    <li>SCHEDULE VIEW</li>
-                </ul>
+                <h2>
+                    MEMBER
+                    <span>SHIPS</span> 
+                </h2>
+                <article>
+                    <img src="/Assets/Images/onlyclasses.png" alt="only classes membership image">
+                    <h3>ONLY CLASSES MEMBERSHIPS</h3>
+                    <ul>
+                        <li><p>FREE ACCESS TO CLASSES WITH REGISTRATION</p></li>
+                        <li><p>SCHEDULE VIEW</p></li>
+                    </ul>
+                </article>
+                <article>
+                    <img src="/Assets/Images/CLASSICMEMBERSHIP.png" alt="classic membership image">
+                    <h3> CLASSIC MEMBERSHIP</h3>
+                    <ul>
+                        <li><p>FREE ACCESS TO THE GYM</p></li>
+                        <li><p>PERSONALIZED MONITORING & COACHING</p></li>
+                        <li><p>SCHEDULE VIEW</p></li>
+                    </ul>
+                </article>
+                <article>
+                    <img src="/Assets/Images/blackmemeb.png" alt="black membership image">
+                    <h3>CLASSICC MEMBERSHIP</h3>
+                    <ul>
+                        <li><p>FREE ACCESS TO THE GYM</p></li>
+                        <li><p>FREE ACCESS TO CLASSES WITH REGISTRATION</p></li>
+                        <li><p>PERSONALIZED MONITORING & COACHING</p></li>
+                        <li><p>SCHEDULE VIEW</p></li>
+                    </ul>
+                </article>
             </section>
             <section id="our-story">
-                <h2>OUR</h2>
-                <h2>STORY</h2>
+                <h2>
+                    OUR 
+                    <span>STORY</span> 
+                </h2>
                 <p>We are one of the oldest but most modern gyms. 50 trainers work in MR GYM and more than 200 people come to our place everyday.</p>
-                <p>We are dedicated to helping you improve your qualitiy of life in a fun and 
-                active way.</p>
+                <p>We are dedicated to helping you improve your qualitiy of life in a fun and active way.</p>
             </section>
-    </main>
-    <footer>
-        <img src="/Assets/Images/instagram-logo.png" alt="instagram logo">
-        <p>@ROCKETGYM</p>
-        <img src="/Assets/Images/whatsapp-logo.png" alt="whatsapp logo">
-        <p>+1 408 741 2369</p>
-        <img src="/Assets/Images/facebook-logo.png" alt="facebook logo">
-        <p>Mega Rocket GYM</p>
-        <p>MEGA ROCKET SA</p>
-        <p>All rights reserved. 2023 ©</p>
-    </footer>
-</body>
+        </main>
+        <footer>
+            <img src="/Assets/Images/instagram-logo.png" alt="instagram logo">
+            <p>@ROCKETGYM</p>
+            <img src="/Assets/Images/whatsapp-logo.png" alt="whatsapp logo">
+            <p>+1 408 741 2369</p>
+            <img src="/Assets/Images/facebook-logo.png" alt="facebook logo">
+            <p>Mega Rocket GYM</p>
+            <p>MEGA ROCKET SA</p>
+            <p>All rights reserved. 2023 ©</p>
+        </footer>
+    </body>
 </html>
