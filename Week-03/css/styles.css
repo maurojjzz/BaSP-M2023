@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
 *{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 body{
-    /* position: relative; */
     width: 1512px;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
-
-
 .header{
     position: relative;
     height: 187px;
     background-color:#323232 ;
     z-index: 1;
 }
-
 .logo{
     position: absolute;
     /* centrar verticalmente */
@@ -27,7 +19,6 @@ body{
     margin-top: -80px;
     left: 20px;
 }
-
 .logo > img {
     position: relative;
     width: 100px;
@@ -35,15 +26,12 @@ body{
     left: 50%;
     margin-left: -60px;
 }
-
 .logo > h1{
-    /* border: 1px; */
+    margin: 0;
     font-size: 45px;
     text-transform: uppercase;
     color: #E3EC39;
-    margin: 0;
 }
-
 .buttons-login{
     position: absolute;
     width: 354px;
@@ -51,9 +39,7 @@ body{
     margin-left: -403px;
     top: 50%;
     margin-top: -38px;
-    /* border: 1px solid white; */
 }
-
 .specific-size-btn{
     position: absolute;
     display: block;
@@ -62,10 +48,7 @@ body{
     border-width: 1px;
     border-radius: 5px;
     background-color: #FFFFFF;
-    /* border: 1px solid white; */
 }
-
-/* LOGIN BUTTON */
 .logbtn  span{
     position: relative;
     display: inline-block;
@@ -75,7 +58,6 @@ body{
     left: 28px;
     color: #000000;
 }
-
 .logbtn > img{
     position: relative;
     top: 50%;
@@ -85,15 +67,10 @@ body{
     height: 35px;
     float: right;
 }
-/* SIGN IN BUTTON */
 .regbtn{
-    /* position: absolute; */
-    /* top: 100%; */
-    /* margin-top: 50px; */
     left: 100%;
     margin-left: -158px;
 }
-
 .regbtn span{
     position: relative;
     display: inline-block;
@@ -103,7 +80,6 @@ body{
     left: 13px;
     color: #000000;
 }
-
 .regbtn > img{
     position: relative;
     top: 50%;
@@ -113,32 +89,26 @@ body{
     height: 35px;
     float: right;
 }
-
-/* Aside */
 aside{
     position: fixed;
     display: block;
     float: left;
     width: 336px;
-    height: 100vh;
+    height: 1400px;
     background-color: #E3EC39;
     top: 0;
-    padding-top: 28vh;
+    padding-top: 250px;
 }
-
 /* aside nav{
     position: relative;
     border: 1px solid black;
 } */
-
 aside nav ul{
     padding: 0;
     margin: 0;
     list-style-type: none;
     text-align: center;
-    /* position: relative; */
 } 
-
 aside nav ul li a{
     display: block;
     text-decoration: none;
@@ -146,29 +116,24 @@ aside nav ul li a{
     font-size: 30px;
     text-transform: uppercase;
 }
-
 aside nav ul li{
     margin-top: 15px;
 }
-
 aside p{
-    position: relative;
+    /* position: relative; */
     font-size: 24px;
-    /* margin-top: 100px; */
-    top: 220px;
+    margin-top: 150px;
+    /* top: 220px; */
     text-align: center;
 }
-
 aside p span{
     display: block;
 }
-
 main{
     margin-left: 336px;
     width: 1176px;
     background-color: #535353;
 }
-
 main section .main-pic{
     position: relative;
     display: block;
@@ -182,7 +147,6 @@ main section .main-pic{
     background-size: cover;
     /* filter: brightness(50%); */
 }
-
 main section .main-pic h2{
     position: absolute;
     display: block;
@@ -194,7 +158,6 @@ main section .main-pic h2{
     color: White;
     font-size: 100px;  
 }
-
 main section .main-pic h2 span{
     position: absolute;
     display: block;
@@ -204,25 +167,20 @@ main section .main-pic h2 span{
     color: #E3EC39;
     /* border: 1px solid white; */
 }
-
 main section .main-pic .image-text{
     position: relative;
     top: 430px;
-    /* border: 1px solid white; */
 }
-
 main section .main-pic .image-text p{
     color: white;
     font-size: 30px;
     text-align: center;
     margin-bottom:32px ;
 }
-
 .features-box{
     position: relative;
     border: 1px solid transparent;
 }
-
 .features-box h3{
     position: absolute;
     display: block;
@@ -235,7 +193,6 @@ main section .main-pic .image-text p{
     margin-bottom:32px ; 
     font-size: 100px; 
 }
-
 .features-box h3 span{
     position: absolute;
     display: block;
@@ -243,35 +200,23 @@ main section .main-pic .image-text p{
     top:70px;
     /* right: 115px; */
     color: #E3EC39;
-    /* border: 1px solid white; */
 }
-
-/* .features-box .esp{
-    margin-top: 350px;
-} */
-
 .feature-list-cont{
     position: relative;
     top: 250px;
-    /* border: 1px solid white; */
     width: 1014px;
     height: 737px;
     left: 50%;
     margin-left: -507px;
     margin-bottom: 270px;
-
 }
-
 .list-features{
     display: block;
     width: 451px;
     height: 288px;
-    /* border: 1px solid white; */
     border-radius: 10px;
     box-shadow:2px 2px 5px black ;
 }
-
-
 .feature-list-cont .reservations{
     position: relative;
     left: 32px;
@@ -305,8 +250,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
-
 .feature-list-cont .schedule{
     position: absolute;
     left:529px;
@@ -320,7 +263,6 @@ main section .main-pic .image-text p{
     filter: brightness(60%);
     z-index: 1;
 }
-
 .feature-list-cont .memberships{
     position: absolute;
     left: 32px;
@@ -334,14 +276,11 @@ main section .main-pic .image-text p{
     filter: brightness(70%);
     z-index: 1;
 }
-
 .feature-list-cont .contactsuggestion{
     position: absolute;
     left:529px;
     top: 407px;
-   
 }
-
 .feature-list-cont .contactsuggestion-img{
     position: absolute;
     width:451px ;
@@ -350,7 +289,6 @@ main section .main-pic .image-text p{
     filter: brightness(60%);
     z-index: 1;
 }
-
 .contactsuggestion h4{
     position: relative;
     top: 10px;
@@ -359,7 +297,6 @@ main section .main-pic .image-text p{
     color: #E3EC39;
     z-index: 2;
 }
-
 .contactsuggestion p{
     position: relative;
     top: 45px;
@@ -368,7 +305,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
 .contact-box{
     position: relative;
     /* border: 1px solid white; */
@@ -378,7 +314,6 @@ main section .main-pic .image-text p{
     width: 1032px;
     height: 650px;
 }
-
 .contact-box h3{
     position: relative;
     display: inline-block;
@@ -390,10 +325,8 @@ main section .main-pic .image-text p{
     text-align: center;
     /* margin-bottom:32px ;  */
     font-size: 100px; 
-    /* border: 1px solid white; */
     margin-bottom: 150px;
 }
-
 .contact-box h3 span{
     position: absolute;
     display: block;
@@ -401,9 +334,7 @@ main section .main-pic .image-text p{
     top:70px;
     right: 50px;
     color: #E3EC39;
-    /* border: 1px solid white; */
 }
-
 .contact-box form{
     position: relative;
     width: 1032px;
@@ -422,7 +353,6 @@ main section .main-pic .image-text p{
     border:1px solid black;
     background-color: #C4C4C4;
 }
-
 .contact-box form .box-name{
     position: absolute;
     display: block;
@@ -432,7 +362,6 @@ main section .main-pic .image-text p{
     left: 55px;
     background-color: transparent;
 }
-
 .contact-box form .box-surname{
     position: absolute;
     display: block;
@@ -442,7 +371,6 @@ main section .main-pic .image-text p{
     left: 307px;
     background-color: transparent;
 }
-
 .contact-box form .box-email{
     position: absolute;
     display: block;
@@ -452,7 +380,6 @@ main section .main-pic .image-text p{
     left: 557px;
     background-color: transparent;
 }
-
 .contact-box form .box-select{
     position: absolute;
     display: block;
@@ -462,7 +389,6 @@ main section .main-pic .image-text p{
     left: 790px;
     background-color: transparent;
 }
-
 .contact-box form .box-textarea{
     position: absolute;
     display: block;
@@ -472,14 +398,12 @@ main section .main-pic .image-text p{
     left: 55px;
     background-color: transparent;
 }
-
 .contact-box form textarea{
     width: 918px;
     height: 100px;
     border-radius: 18px;
     background-color: #C4C4C4;
 }
-
 .contact-box form textarea::placeholder{
  position: absolute;
     display: block;
@@ -487,7 +411,6 @@ main section .main-pic .image-text p{
     top: 15px;
     left: 20px;
 }
-
 .contact-box form button{
     position: relative;
     display: block;
@@ -499,7 +422,6 @@ main section .main-pic .image-text p{
     border: none;
     border-radius: 10px;
 }
-
 .activities-box{
     position: relative;
     width: 1011px;
@@ -507,9 +429,7 @@ main section .main-pic .image-text p{
     left: 50%;
     margin-left:-505.5px ;
     margin-bottom: 150px;
-    /* border: 1px solid white; */
 }
-
 .activities-box h3{
     position: relative;
     display: inline-block;
@@ -521,10 +441,8 @@ main section .main-pic .image-text p{
     text-align: center;
     /* margin-bottom:32px ;  */
     font-size: 100px; 
-    /* border: 1px solid white; */
     margin-bottom: 150px;
 }
-
 .activities-box h3 span{
     position: absolute;
     display: block;
@@ -532,24 +450,19 @@ main section .main-pic .image-text p{
     top:70px;
     right: 50px;
     color: #E3EC39;
-    /* border: 1px solid white; */
 }
-
 .list-activities{
     display: block;
     width: 306px;
     height: 187px;
-    /* border: 1px solid white; */
     border-radius: 10px;
     box-shadow:1px 2px 5px black ;
 }
-
 .activities-box .crossfit{
     position: absolute;
     left: 193px;
     top: 208px;
 }
-
 .crossfit h4{
     position: relative;
     display: inline-block;
@@ -562,11 +475,9 @@ main section .main-pic .image-text p{
     text-align: center;
     color: white;
     z-index: 2;
-    /* border: 1px solid white; */
     border-radius: 10px;
     background-color: hsla(0, 0%, 7%, 0.568);
 }
-
 .list-activities .crossfit-img{
     position: absolute;
     width: 306px;
@@ -575,13 +486,11 @@ main section .main-pic .image-text p{
     filter: brightness(80%);
     z-index: 1;
 }
-
 .activities-box .box{
     position: absolute;
     left: 565px;
     top: 208px;
 }
-
 .box h4{
     position: relative;
     display: inline-block;
@@ -594,11 +503,9 @@ main section .main-pic .image-text p{
     text-align: center;
     color: white;
     z-index: 2;
-    /* border: 1px solid white; */
     border-radius: 10px;
     background-color: hsla(0, 0%, 7%, 0.603);
 }
-
 .list-activities .box-img{
     position: absolute;
     width: 306px;
@@ -607,12 +514,10 @@ main section .main-pic .image-text p{
     filter: brightness(80%);
     z-index: 1;
 }
-
 .activities-box .functional{
     position: absolute;
     top: 452px;
 }
-
 .functional h4{
     position: relative;
     display: inline-block;
@@ -625,11 +530,9 @@ main section .main-pic .image-text p{
     text-align: center;
     color: white;
     z-index: 2;
-    /* border: 1px solid white; */
     border-radius: 10px;
     background-color: hsla(0, 0%, 7%, 0.568);
 }
-
 .list-activities .functional-img{
     position: absolute;
     width: 306px;
@@ -638,13 +541,11 @@ main section .main-pic .image-text p{
     filter: brightness(80%);
     z-index: 1;
 }
-
 .activities-box .spinning{
     position: absolute;
     top: 452px;
     left: 354px;
 }
-
 .spinning h4{
     position: relative;
     display: inline-block;
@@ -657,11 +558,9 @@ main section .main-pic .image-text p{
     text-align: center;
     color: white;
     z-index: 2;
-    /* border: 1px solid white; */
     border-radius: 10px;
     background-color: hsla(0, 0%, 7%, 0.568);
 }
-
 .list-activities .spinning-img{
     position: absolute;
     width: 306px;
@@ -670,13 +569,11 @@ main section .main-pic .image-text p{
     filter: brightness(80%);
     z-index: 1;
 }
-
 .activities-box .fitness{
     position: absolute;
     top: 452px;
     left: 705px;
 }
-
 .fitness h4{
     position: relative;
     display: inline-block;
@@ -689,11 +586,9 @@ main section .main-pic .image-text p{
     text-align: center;
     color: white;
     z-index: 2;
-    /* border: 1px solid white; */
     border-radius: 10px;
     background-color: hsla(0, 0%, 7%, 0.568);
 }
-
 .list-activities .fitness-img{
     position: absolute;
     width: 306px;
@@ -702,7 +597,6 @@ main section .main-pic .image-text p{
     filter: brightness(80%);
     z-index: 1;
 }
-
 .memberships-box{
     position: relative;
     display: block;
@@ -711,9 +605,7 @@ main section .main-pic .image-text p{
     left: 50%;
     margin-left:-400px ;
     margin-bottom: 150px;
-    /* border: 1px solid white; */
 }
-
 .memberships-box h3{
     position: relative;
     display: inline-block;
@@ -725,10 +617,8 @@ main section .main-pic .image-text p{
     text-align: center;
     margin-bottom:32px ; 
     font-size: 100px; 
-    /* border: 1px solid white; */
     margin-bottom: 150px;
 }
-
 .memberships-box h3 span{
     position: absolute;
     display: block;
@@ -736,38 +626,31 @@ main section .main-pic .image-text p{
     top:85px;
     right: 1px;
     color: #E3EC39;
-    /* border: 1px solid white; */
 }
-
 .list-memberships{
     display: block;
     width: 480px;
     height: 575px;
-    /* border: 1px solid white; */
     border-radius: 10px;
     box-shadow:3px 2px 5px black ;
 }
-
 .only-classes{
     position: absolute;
     left: 50%;
     margin-left: -240px;
 }
-
 .classic{
     position: absolute;
     top: 914px;
     left: 50%;
     margin-left: -240px;
 }
-
 .black-mem{
     position: absolute;
     top: 1562px;
     left: 50%;
     margin-left: -240px;
 }
-
 .only-classes h4,
 .classic h4,
 .black-mem h4{
@@ -782,15 +665,12 @@ main section .main-pic .image-text p{
     text-align: center;
     /* margin-bottom:32px ;  */
     font-size: 40px; 
-    /* border: 1px solid white; */
     /* margin-bottom: 150px; */
 }
-
 .memberships-box ul{
     padding: 0;
     list-style: none;
 }
-
 .only-classes ul li:nth-child(1){
     position: relative;
     display: block;
@@ -801,10 +681,8 @@ main section .main-pic .image-text p{
     text-align: center;
     font-size: 24px;
     color: white;
-    /* border: 1px solid white; */
     z-index: 2;
 }
-
 .only-classes ul li:nth-child(2){
     position: relative;
     display: block;
@@ -815,10 +693,8 @@ main section .main-pic .image-text p{
     text-align: center;
     font-size: 24px;
     color: white;
-    /* border: 1px solid white; */
     z-index: 2;
 }
-
 .only-classes .only-img{
     position: absolute;
     width: 480px;
@@ -827,7 +703,6 @@ main section .main-pic .image-text p{
     filter: brightness(50%);
     z-index: 1;
 }
-
 .classic ul li:nth-child(1){
     position: relative;
     display: block;
@@ -840,7 +715,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
 .classic ul li:nth-child(2){
     position: relative;
     display: block;
@@ -853,7 +727,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
 .classic ul li:nth-child(3){
     position: relative;
     display: block;
@@ -866,7 +739,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
 .black-mem ul li:nth-child(1){
     position: relative;
     display: block;
@@ -879,7 +751,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
 .black-mem ul li:nth-child(2){
     position: relative;
     display: block;
@@ -892,7 +763,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
 .black-mem ul li:nth-child(3){
     position: relative;
     display: block;
@@ -905,7 +775,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
 .black-mem ul li:nth-child(4){
     position: relative;
     display: block;
@@ -918,7 +787,6 @@ main section .main-pic .image-text p{
     color: white;
     z-index: 2;
 }
-
 .classic-img{
     position: absolute;
     width: 480px;
@@ -927,7 +795,6 @@ main section .main-pic .image-text p{
     filter: brightness(50%);
     z-index: 1;
 }
-
 .black-img {
     position: absolute;
     width: 480px;
@@ -936,16 +803,13 @@ main section .main-pic .image-text p{
     filter: brightness(50%);
     z-index: 1;
 }
-
 .story-box{
     position: relative;
     left: 50%;
     margin-left:-485px ;
     width: 971px;
     height: 550px;
-    /* border: 1px solid white; */
 }
-
 .story-box h3{
     position: relative;
     display: inline-block;
@@ -957,53 +821,90 @@ main section .main-pic .image-text p{
     /* text-align: center; */
     /* margin-bottom:32px ;  */
     font-size: 60px; 
-    /* border: 1px solid white; */
     margin-bottom: 150px;
 }
-
 .story-box h3 span{
     position: absolute;
     display: block;
     left: 68px;
     color: #E3EC39;
-    /* border: 1px solid white; */
 }
-
 .historia{
     position: relative;
     display: block;
     width:666px;
     height: 214px;
     font-size:24px;
-    /* border: 1px solid white; */
     background-color:#8b8b8b ;
     border-radius: 18px;
     left: 330px;
     top: -180px;
 }
-
 .historia p:nth-child(1){
     position: absolute;
     display: block;
-    /* border: 1px solid white; */
     width: 600px;
     left: 50%;
     margin-left: -300px;
     top: 18px;
     text-align: center;
 }
-
 .historia p:nth-child(2){
     position: absolute;
     display: block;
-    /* border: 1px solid white; */
     width: 600px;
     left: 50%;
     margin-left: -300px;
     top: 130px;
     text-align: center;
 }
-
 footer{
+    position: sticky;
+    top: 2220px;
+    height: 147px;
+    width: 1512px;
+    bottom: 106px;
     background-color: gray;
+}
+footer article{
+    position: relative;
+    display: inline-block;
+    width: 252px;
+    height: 81px;
+    color: white;
+}
+footer article .socials{
+    position: absolute;
+    top: 33px;
+    left: 92px;
+}
+.copyright p{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 23px;
+}
+footer article:nth-child(4){
+    float: right;
+    top: 50%;
+    margin-top: -41.5px;
+    right: 129px;
+}
+footer article:nth-child(1){
+    position: absolute;
+    top: 50%;
+    margin: -41.5px;
+    left: 110px;
+}
+footer article:nth-child(2){
+    position: absolute;
+    top: 50%;
+    margin: -41.5px;
+    left: 440px;
+}
+footer article:nth-child(3){
+    position: absolute;
+    top: 50%;
+    margin: -41.5px;
+    left: 763px;
 }
