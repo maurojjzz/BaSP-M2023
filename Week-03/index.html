@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mega Rocket</title>
+        <link rel="stylesheet" href="../Week-03/css/reset.css">
         <link rel="stylesheet" href="../Week-03/css/styles.css">
     </head>
     <body>
@@ -27,7 +28,7 @@
         <aside>
             <nav>
                 <ul>
-                    <li class="papa"><a href="#home">Home</a> </li>
+                    <li><a href="#home">Home</a> </li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#contact-us">Contact Us</a></li>
                     <li><a href="#activities">Activities</a> </li>
@@ -40,7 +41,7 @@
             </p>
         </aside>
         <main>
-            <section id="home-old">
+            <section >
                 <div class="main-pic">
                     <h2>
                         DON´T SIT 
@@ -65,76 +66,90 @@
                         FEATU
                         <span>RES</span> 
                     </h3>
-                    <article class="liminar">
-                        <img src="../Assets/Images/reservation-pic.png" alt="reservations image">
-                        <h3>RESERVATIONS</h3>
-                        <p>Choose your favorite class and ensure your place</p>   
-                    </article>
-                    <article>
-                        <img src="../Assets/Images//schedule-pic.jpg" alt="schedule image">
-                        <h3>SCHEDULE</h3>
-                        <p>Monday to Saturday 08 am till 20 pm</p>   
-                    </article>
-                    <article>
-                        <img src="../Assets/Images/membership-pic.jpg" alt="membership image">
-                        <h3>MEMBERSHIPS</h3>
-                        <p>Pick which one is best for you</p>    
-                    </article>
-                    <article>
-                        <img src="../Assets/Images/contact-pic.png" alt="contact and suggestions image">
-                        <h3>CONTACT AND SUGGESTIONS</h3>
-                        <p>Your opinion is important to us, it helps us improve</p>    
-                    </article>
+                    <div class="feature-list-cont">
+                        <article class="list-features reservations">
+                            <img class="reservations-img" src="../Assets/Images/reservation-pic.png" alt="reservations image">
+                            <h4>RESERVATIONS</h4>
+                            <p>Choose your favorite class and ensure your place</p>   
+                        </article>
+                        <article class="list-features schedule">
+                            <img class="schedule-img" src="../Assets/Images//schedule-pic.jpg" alt="schedule image">
+                            <h4>SCHEDULE</h4>
+                            <p>Monday to Saturday</p>  
+                            <p>08 am till 20 pm</p>   
+                        </article>
+                        <article  class="list-features memberships">
+                            <img class="memberships-img" src="../Assets/Images/membership-pic.jpg" alt="membership image">
+                            <h4>MEMBERSHIPS</h4>
+                            <p>Pick which one is best for you</p>    
+                        </article>
+                        <article  class="list-features contactsuggestion">
+                            <img class="contactsuggestion-img" src="../Assets/Images/contactandsuggestion.png" alt="contact and suggestions image">
+                            <h4>CONTACT AND SUGGESTIONS</h4>
+                            <p>Your opinion is important to us,</p> 
+                            <p>it helps us improve</p>    
+                        </article>
+                    </div>
                 </div>  
             </section>
-            <section id="contact-us">
+            <section id="contact-us" class="contact-box">
                 <h3>
                     CONTACT
                     <span>US</span>
                 </h3>
                 <form>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
-                    <label for="surname">Surname</label>
-                    <input type="text" name="surname" id="surname">
-                    <label for="mail">E-Mail</label>
-                    <input type="text" name="mail" id="mail">
-                    <label for="contact-reason">Contact reason</label>
-                    <select name="contact-reason" id="contact-reason">
-                        <option value="choose" selected disabled>Choose one</option>
-                        <option value="costs">I want to know the memberships and costs</option>
-                        <option value="query">I want to make a query or suggestion</option>
-                        <option value="claim">I want to make a claim</option>
-                        <option value="other">Other...</option>
-                    </select>
-                    <label for="description">Message</label>
-                    <textarea name="description" placeholder="Write here..."></textarea>
+                    <div class="box-name">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="box-surname">
+                        <label for="surname">Surname</label>
+                        <input type="text" name="surname" id="surname" placeholder="Surname">
+                    </div>
+                    <div class="box-email">
+                        <label for="mail">E-Mail</label>
+                        <input type="text" name="mail" id="mail" placeholder="E-Mail">
+                    </div>
+                    <div class="box-select">
+                        <label for="contact-reason">Contact reason</label>
+                        <select name="contact-reason" id="contact-reason">
+                            <option value="choose" selected disabled>Choose one</option>
+                            <option value="costs">I want to know the memberships and costs</option>
+                            <option value="query">I want to make a query or suggestion</option>
+                            <option value="claim">I want to make a claim</option>
+                            <option value="other">Other...</option>
+                        </select>
+                    </div>
+                    <div class="box-textarea">
+                        <label for="description">Message</label>
+                        <textarea name="description" placeholder="Write here..."></textarea>
+                    </div>                    
                     <button type="submit">SEND</button>
                 </form>
             </section>
-            <section id="activities">
+            <section id="activities" class="activities-box">
                 <h3>
                     ACTIVI
                     <span>TIES</span> 
                 </h3>
-                <article>
-                    <img src="../Assets/Images/crossfit.jpg" alt="crossfit image">
+                <article class="list-activities crossfit">
+                    <img class="crossfit-img" src="../Assets/Images/crossfit.jpg" alt="crossfit image">
                     <h4>CROSSFIT</h4>
                 </article>
-                <article>
-                    <img src="../Assets/Images/box.png" alt="boxing image">
-                    <h3>BOX</h3>                    
+                <article class="list-activities box">
+                    <img class="box-img" src="../Assets/Images/box.png" alt="boxing image">
+                    <h4>BOX</h4>                    
                 </article>
-                <article>
-                    <img class="funfunffun" src="../Assets/Images/functional.jpg" alt="functional image">
+                <article class="list-activities functional">
+                    <img class="functional-img" src="../Assets/Images/functional.jpg" alt="functional image">
                     <h4>FUNCTIONAL</h4>                    
                 </article>
-                <article>
-                    <img src="../Assets/Images/Spinning.png" alt="spinning image">
+                <article class="list-activities spinning">
+                    <img class="spinning-img" src="../Assets/Images/Spinning.png" alt="spinning image">
                     <h4>SPINNING</h4>                   
                 </article>
-                <article>
-                    <img src="../Assets/Images/fitness.jpg" alt="fitness image">
+                <article class="list-activities fitness">
+                    <img class="fitness-img" src="../Assets/Images/fitness.jpg" alt="fitness image">
                     <h4>FITNESS</h4>                   
                 </article>
             </section>
