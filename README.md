@@ -12,5 +12,8 @@ The final result: https://www.figma.com/file/5kIcKaOXyFotW6ON4sodGu/UI-kit-RR---
 ## Week 02
 Create an HTML file with the same content as the landing page made in week 01 with Figma using the desktop view as prototype.
 
+## Week 03
+Based on the week 01's screenflow we have to take as reference the landing page to give it styles on CSS using week 2 HTML project. This week CSS project shouldn't be responsive and the challenge is to solve it using a 1512px width screen.
+
 ## Author
 - Mauro Jimenez
