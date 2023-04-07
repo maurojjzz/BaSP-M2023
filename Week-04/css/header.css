@@ -1,0 +1,23 @@
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99vw;
+    height: 154px;
+    background-color:#535353;
+}
+.logo img{
+    width: 104px;
+    height: 114px;
+    margin-left:20px;
+}
+.logo h1{
+    display: none;
+}
+.hambuger-menu{
+    margin-right:35px;
+}
+.buttons-login{
+    display: none;
+}

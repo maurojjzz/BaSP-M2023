@@ -1,35 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color:#6b6a6a;
-    overflow-x: hidden;
-}
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 154px;
-    background-color:#535353;
-}
-.logo img{
-    width: 104px;
-    height: 114px;
-    margin-left:20px;
-}
-.logo h1{
-    display: none;
-}
-.hambuger-menu{
-    margin-right:35px;
-}
-.buttons-login{
-    display: none;
-}
 .ipadplus_pic{
     display: none;
 }
-aside{
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+}
+main aside a{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+}
+main aside{
+    display: none;/*flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 99vw;
+    height: 650px;
+    margin: 0 auto;
+    background-color: hsla(0, 0%, 0%, 0.836);
+}
+.buttons-login-aside{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    max-width: 400px;
+    margin-top: 55px;
+}
+main aside nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    width: 330px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+main aside p{
     display: none;
 }
 .first-section{
@@ -422,30 +433,6 @@ aside{
     font-size: 14px;
     color: #535353;
     margin-bottom: 15px;
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 500px;
-    border: 1px solid white;
-    background-color: #c4c4c4;
-}
-footer article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0 20px 0;
-}
-footer article img{
-    width: 52px;
-    height: 54px;
-    margin-bottom: 25px;
-}
-footer article p{
-    font-size: 20px;
 }
 
 @media (min-width: 600px) {
