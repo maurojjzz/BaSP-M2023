@@ -600,7 +600,52 @@ main aside p{
     .mobilepic{
         display:none  ;
     }
+    .buttons-login-aside{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100vw;
+    }
+    main aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        width: 20vw;
+        height: 100vh;
+        max-height: 5903px;
+        background-color: #D5DD3C;
+        position: sticky;
+        top: 0;
+    }
+    .address-desktop{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 24px;
+        color: #000000;
+    }
+    main aside nav ul li{
+        margin-bottom: 0;
+    }
+    main aside nav ul li a{ 
+        color: #000000;
+        font-size: 28px;
+    }
+    .container{
+        width: 80vw;
+        /* border: 1px solid white; */
+    }
+    .container img{
+        display: none;
+    }
+
+
     .ipadplus_pic{
         display:block ;
-    } 
+    }
 }
