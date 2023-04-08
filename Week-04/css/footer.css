@@ -3,9 +3,8 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 99vw;
+    width: 100vw;
     height: 500px;
-    border: 1px solid white;
     background-color: #c4c4c4;
 }
 footer article{
@@ -21,4 +20,23 @@ footer article img{
 }
 footer article p{
     font-size: 20px;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    footer{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 280px;
+    }
+
+    footer article{
+        flex: 30%;
+    }
+
+
+}
+
+@media (min-width: 1025px){
+   
 }

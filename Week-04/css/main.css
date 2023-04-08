@@ -5,7 +5,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 99vw;
+    width: 100vw;
 }
 main aside a{
     color: #FFFFFF;
@@ -44,7 +44,7 @@ main aside p{
     display: none;
 }
 .first-section{
-    width: 100vw;
+    width: 99vw;
     height: 81.5vh;
 }
 .main-pic{
@@ -53,7 +53,7 @@ main aside p{
 }
 .main-pic .mobilepic{
     position: absolute;
-    width: 100vw;
+    width: 99vw;
     height: 81.5vh;
     filter: brightness(70%);
     object-fit: cover;
@@ -397,7 +397,6 @@ main aside p{
 .list-memberships ul li{
     margin-bottom: 20px;
 }
-
 .story-box{
     display: flex;
     flex-direction: column;
@@ -434,12 +433,174 @@ main aside p{
     color: #535353;
     margin-bottom: 15px;
 }
+@media (min-width: 601px) and (max-width: 1024px) {
+   .buttons-login-aside{
+        max-width: 650px;
+    }
+    .main-pic .mobilepic{
+        object-position:  25% 20%;
+    }
+    .main-pic .text h2{
+        min-width: 500px;
+        max-width: 685px;
+        font-size: 100px; 
+        margin-top: 100px;
+    }
+    .main-pic .text .image-text{
+        max-width: 600px;
+        margin-bottom: 115px;
+        font-size: 22px;
+    } 
+    .features-box{
+        width: 715px;
+    }
+    .features-box h3{
+        min-width: 450px;
+        font-size: 95px;  
+    }
+    .feature-list-cont{
+        width: 711px;
+    }
+    .list-features{
+        width: 95vw;
+        max-width: 711px;
+        min-width: 400px;
+        height: 458px;
+    }
+    .list-features img{
+        width: 95vw;
+        max-width: 711px;
+        min-width: 400px;
+        height: 458px;
+    }
+    .list-features h4{
+        font-size: 95px;
+    }
+    .contactsuggestion h4{
+        width: 700px;
+    }
+    .list-features p{
+        font-size: 45px;
+    }
+    .contact-box h3{
+        min-width: 550px;
+        font-size: 95px; 
+    }
+    .contact-box form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 670px;
+        height: 631px;
+        justify-content: space-around;
+    }
+    .box-name,
+    .box-surname,
+    .box-email,
+    .box-select,
+    .box-textarea{
+        align-items: start;
+    }
+    .box-name,
+    .box-surname{
+        margin-top: 47px;
+    }
+    .box-name input::placeholder,
+    .box-surname input::placeholder,
+    .box-email input::placeholder,
+    .box-textarea input::placeholder{
+        text-align: start;
+    }
+    .contact-box form input{
+        width: 240px;
+        height: 35px;
+    }
+    .box-select select{
+        width: 240px;
+        height: 38px;
+    }
+    .box-textarea{
+        align-items: center;
+        flex: 100%;
+    }
+    .box-textarea textarea{
+        width: 566px;
+        height: 156px;
+    }
+    .box-textarea label{
+        align-self: flex-start;
+        margin-left: 50px;
+    }
+    .activities-box{
+        width: 711px;
+    }
+    .activities-box h3{
+        min-width: 480px;
+        font-size: 95px;  
+    }
+    .list-activities{
+        width: 95vw;
+        max-width: 711px;
+        min-width: 400px;
+        height: 458px;
+    }
+    .list-activities img{
+        width: 95vw;
+        max-width: 711px;
+        min-width: 400px;
+        height: 458px;
+    }
+    .list-activities h4{
+        font-size: 85px;
+        padding: 10px;
+    }
+    .memberships-box{
+        width: 711px;
+    }
+    .memberships-box h3{
+        min-width: 600px;
+        font-size: 95px;  
+    }
+    .list-memberships{
+        width: 95vw;
+        max-width: 711px;
+        min-width: 400px;
+        height: 390px;
+    }
+    .list-memberships img{
+        width: 95vw;
+        max-width: 711px;
+        min-width: 400px;
+        height: 390px;
+        object-position:  25% 20%;
+    }
+    .list-memberships h4{
+        width: 358px;
+        font-size: 40px;
+    }
+    .story-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .story-box h3{
+        min-width: 450px;
+        font-size: 95px;  
+    }
+    .historia{
+        width: 690px;
+        height: 191px;
+    }
+    .historia p{
+        font-size: 22px; 
+    }
+}
 
-@media (min-width: 600px) {
+@media (min-width: 1025px){
     .mobilepic{
-        display: none;
+        display:none  ;
     }
     .ipadplus_pic{
-        display: block;
-    }
+        display:block ;
+    } 
 }

@@ -1,9 +1,8 @@
-
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 99vw;
+    width: 100vw;
     height: 154px;
     background-color:#535353;
 }
@@ -20,4 +19,36 @@
 }
 .buttons-login{
     display: none;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header-container{
+        height: 245px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 35px;
+    }
+    .logo img{
+        width: 140px;
+        height: 150px;
+    }
+    .logo h1{
+        display: block;
+        font-size: 48px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #E3EC39;
+    }
+    .hambuger-menu img{
+        width: 87px;
+        height: 78px;
+    }
+
+}
+
+@media (min-width: 1025px){
+   
 }
