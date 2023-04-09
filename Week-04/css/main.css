@@ -617,7 +617,7 @@ main aside p{
         gap: 100px;
         width: 20vw;
         height: 100vh;
-        max-height: 5903px;
+        max-height: 6000px;
         background-color: #D5DD3C;
         position: sticky;
         top: 0;
@@ -637,15 +637,194 @@ main aside p{
         font-size: 28px;
     }
     .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 80vw;
-        /* border: 1px solid white; */
     }
-    .container img{
-        display: none;
+    .first-section{
+        width: 80vw;
     }
-
-
+    .main-pic{
+        position: relative;
+        display: block;
+    }
     .ipadplus_pic{
-        display:block ;
+        display: block;
+        position: absolute;
+        width: 80vw;
+        height: 81.5vh;
+        filter: brightness(50%);
+        object-fit: cover;
+        object-position:  25% 20%;
+        z-index: 1;
     }
+    .main-pic .text h2{
+        min-width: 500px;
+        max-width: 685px;
+        font-size: 100px; 
+        margin-top: 100px;
+    }
+    .main-pic .text .image-text{
+        max-width: 600px;
+        margin-bottom: 115px;
+        font-size: 22px;
+    } 
+    .features-box{
+        width: 70vw;
+        max-width: 1118px;
+        min-width: 900px;
+    }
+    .features-box h3{
+        font-size: 100px;
+        min-width: 470px;
+    }
+    .feature-list-cont{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 35px;
+        flex-wrap: wrap;
+    }
+    .list-features{
+        width: 451px;
+        height: 288px;
+    }
+    .list-features img{
+        width: 451px;
+        height: 288px;
+    }
+    .contact-box{
+        width: 70vw;
+        max-width: 1118px;
+        min-width: 780px;
+    }
+    .contact-box h3{
+        font-size: 100px;
+        min-width: 560px;
+    }
+    .contact-box form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70vw;
+        max-width: 1032px;
+        min-width: 780px;
+        height: 351px;
+        padding: 15px 0 15px 0;
+    }
+    .box-name,
+    .box-surname,
+    .box-email,
+    .box-select,
+    .box-textarea{
+        align-items: start;
+    }
+    .box-name{
+        margin-top: 0;
+    }
+    .box-name input::placeholder,
+    .box-surname input::placeholder,
+    .box-email input::placeholder,
+    .box-textarea input::placeholder{
+        text-align: start;
+    }
+    .contact-box form input{
+        width: 190px;
+        height: 35px;
+    }
+    .box-select select{
+        width: 195px;
+        height: 38px;
+    }
+    .box-textarea{
+        align-items: center;
+        width: 68vw;
+        max-width: 1010px;
+        min-width: 500px;
+        margin-bottom: 5px;
+        padding-right: 10px;
+     
+    }
+    .box-textarea textarea{
+        width: 65vw;
+        max-width: 935px;
+        min-width: 500px;
+    }
+    .box-textarea label{
+        align-self: self-start;
+    }
+    .button-contact{
+        justify-content: center;
+    }
+    .activities-box{
+        width: 70vw;
+        max-width: 1016px;
+        min-width: 780px;
+    }
+    .activities-box h3{
+        font-size: 100px;
+        min-width: 510px;
+    }
+    .list-activities{
+        width: 306px;
+        height: 187px;
+    }
+    .list-activities img{
+        max-width: 306px;
+        min-width: 306px;
+        height: 187px;
+    }
+    .list-activities-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        width: 70vw;
+        max-width: 1016px;
+        min-width: 780px;
+        gap: 40px;
+    }
+    .crossfit{
+        order: 1;
+    }
+    .box{
+        order: 2;
+    }
+    .memberships-box{
+        width: 70vw;
+        max-width: 1016px;
+        min-width: 780px;
+    }
+    .memberships-box h3{
+        font-size: 100px;
+        min-width: 670px;
+    }
+    .list-memberships{
+        width: 480px;
+        height: 575px;
+    }
+    .list-memberships img{
+        max-width: 480px;
+        min-width: 480px;
+        height: 575px;
+        border-radius: 0;
+    }
+
+    .story-box{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        width: 70vw;
+        max-width: 971px;
+        min-width: 780px;
+    }
+    .story-box h3{
+        font-size: 60px;
+    }
+    .historia{
+        width: 666px;
+    }
+    
 }
