@@ -9,11 +9,11 @@ main{
     width: 100vw;
 }
 main aside a{
-    color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 35px;
+    color: #FFFFFF;
 }
 main aside{
     display: none;
@@ -632,13 +632,24 @@ main aside nav ul{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 100px;
+        gap: 80px;
         width: 20vw;
         height: 100vh;
         max-height: 6000px;
         background-color: #D5DD3C;
         position: sticky;
         top: 0;
+    }
+    main aside nav{
+        height: 70vh;
+        max-height: 550px;
+    }
+    main aside nav ul li{
+        margin-bottom: 0;
+    }
+    main aside nav ul li a{ 
+        color: #000000;
+        font-size: 28px;
     }
     .address-desktop{
         display: flex;
@@ -647,12 +658,19 @@ main aside nav ul{
         font-size: 24px;
         color: #000000;
     }
-    main aside nav ul li{
-        margin-bottom: 0;
-    }
-    main aside nav ul li a{ 
+    .address-desktop p{
+        display: block;
         color: #000000;
-        font-size: 28px;
+    }
+    .address-side,
+    .telephone-side{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .telephone-side img{
+        width: 38px;
+        height: 38px;
     }
     .container{
         display: flex;
@@ -828,7 +846,6 @@ main aside nav ul{
         height: 575px;
         border-radius: 0;
     }
-
     .story-box{
         display: flex;
         flex-direction: row;
