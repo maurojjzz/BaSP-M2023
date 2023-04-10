@@ -170,7 +170,6 @@ main aside nav ul{
     display: flex;
     flex-direction:column;
     align-items: center;
-    /* margin: 0 auto; */
     margin-bottom: 100px;
 }
 .contact-box h3{
@@ -643,13 +642,35 @@ main aside nav ul{
     main aside nav{
         height: 70vh;
         max-height: 550px;
+        padding-top: 10px;
     }
     main aside nav ul li{
         margin-bottom: 0;
     }
     main aside nav ul li a{ 
         color: #000000;
-        font-size: 28px;
+        font-size: 28px;        
+    }
+    @keyframes sidebarhover {
+        0%{
+            background-color: #000000;
+        }
+        15%{
+            background-color: #000000;
+            color: #D5DD3C; 
+        }
+        50%{
+            background-color: #000000;
+            color: #D5DD3C; 
+        }
+        100%{
+            background-color: #000000;
+            color: #D5DD3C; 
+        }
+    }
+    main aside nav ul li a:hover{
+        animation-name: sidebarhover;
+        animation-duration: 3s;
     }
     .address-desktop{
         display: flex;
