@@ -4,14 +4,14 @@ console.log("EXERCISE 5: FOR");
 de JavaScript para mostrar una alerta utilizando cada una de las palabras.*/
 console.log("-Exercise 5.a: ");
 var fruits=["banana","kiwi","apple","peach","watermelon"];
-for (let i = 0; i < fruits.length; i++) {
+for (var i = 0; i < fruits.length; i++) {
     alert(fruits[i]); 
 }
 
 /*b)Al array anterior convertir la primera letra de cada palabra en mayúscula
  y mostrar una alerta por cada palabra modificada.*/
 console.log("-Exercise 5.b: ");
-for (let i = 0; i < fruits.length; i++) {
+for (var i = 0; i < fruits.length; i++) {
     var firstLetter= fruits[i].substring(0,1);
     var rest=fruits[i].substring(1);
     fruits[i] = firstLetter.toUpperCase()+rest;
@@ -23,7 +23,7 @@ recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable
 Al final mostrar una única alerta con la cadena completa. */
 console.log("-Exercise 5.c: ");
 var sentence="";
-for (let i = 0; i < fruits.length; i++) {
+for (var i = 0; i < fruits.length; i++) {
     sentence+= fruits[i];
 }
 alert(sentence);
@@ -34,7 +34,7 @@ desde el número 0 hasta al número 9. Mostrar por la consola del navegador el a
 (utilizar console.log).*/
 console.log("-Exercise 5.d: ");
 var myEmptyArr=[];
-for (let i = 0; i < 10; i++) {
+for (var i = 0; i < 10; i++) {
     myEmptyArr.push(i);
 }
 console.log(myEmptyArr);
