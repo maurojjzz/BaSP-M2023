@@ -418,7 +418,7 @@ main aside nav ul{
     color: #535353;
     margin-bottom: 15px;
 }
-@media (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     .container{
         display: flex;
         flex-direction: column;
@@ -615,7 +615,7 @@ main aside nav ul{
         font-size: 22px; 
     }
 }
-@media (min-width: 1025px){
+@media screen and (min-width: 1025px){
     .mobilepic,
     .buttons-login-aside{
         display:none  ;

@@ -20,7 +20,7 @@
 .buttons-login{
     display: none;
 }
-@media (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     .header-container{
         height: 245px;
     }
@@ -46,7 +46,7 @@
         height: 78px;
     }
 }
-@media (min-width: 1025px){
+@media screen and (min-width: 1025px){
     .header-container{
         justify-content: space-between;
         width: 100vw;
