@@ -24,5 +24,16 @@ The problematic in week 04 was to make a responsive web desing following the con
 GitHub pages link: 
 https://maurojjzz.github.io/BaSP-M2023/Week-04/index.html
 
+## Week 05
+This week, exercises were providen to us to solve using javaScript composed by:
+- Variables and operators.
+- String.
+- Arrays.
+- If-Else.
+- For.
+- Functions.
+
+Link to access: https://maurojjzz.github.io/BaSP-M2023/Week-05/index.html
+
 ## Author
 - Mauro Jimenez
