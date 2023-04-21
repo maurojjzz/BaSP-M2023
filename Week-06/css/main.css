@@ -1,0 +1,885 @@
+.ipadplus_pic,
+main aside p{
+    display: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+main aside a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+main aside{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 99vw;
+    height: 650px;
+    margin: 0 auto;
+    background-color: hsla(0, 0%, 0%, 0.836);
+}
+.buttons-login-aside{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    max-width: 400px;
+    margin-top: 55px;
+}
+main aside nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    width: 330px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.first-section{
+    width: 99vw;
+    height: 81.5vh;
+}
+.main-pic .mobilepic{
+    position: absolute;
+    width: 99vw;
+    height: 81.5vh;
+    filter: brightness(70%);
+    object-fit: cover;
+    object-position: 15%;
+    z-index: 1;
+}
+.main-pic .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:80vh;
+}
+.main-pic .text h2{
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 420px;
+    width: 98vw;
+    color: #ffffff;
+    font-size: 60px;  
+    font-weight: bold;
+    z-index: 2;
+    margin-top: 7vh;
+}
+.main-pic .text h2 span{
+    display: flex;
+    justify-content: end;
+    color: #E3EC39;
+}
+.main-pic .text .image-text{
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: center;
+    width: 80vw;
+    color: #ffffff;
+    z-index: 2;
+    margin-bottom: 14vh;
+    font-size: 20px;
+}
+.main-pic .text .image-text p{
+    margin-top: 30px;
+}
+.main-pic .text .image-text p:last-child{
+    margin-bottom: 15px;
+}
+.features-box{
+    display: flex;
+    flex-direction:column;
+    width: 100wv;
+    align-items: center;
+}
+.features-box h3{
+    display: flex;
+    flex-direction: column;
+    min-width: 323px;
+    color: #ffffff;
+    font-size: 70px;  
+    font-weight: bold;
+    margin: 50px 0 40px 0;
+}
+.features-box h3 span{
+    display: flex;
+    justify-content: end;
+    color: #E3EC39;
+    
+}
+.feature-list-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.list-features{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+.list-features img{
+    position: absolute;
+    min-width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    z-index: 1;
+    filter: brightness(60%);
+}
+.list-features h4{
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 2;
+    color: #E3EC39;
+}
+.contactsuggestion h4{
+    width: 298px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+    color: #E3EC39;
+}
+.list-features .features-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.list-features p{
+    z-index: 2;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.contact-box{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.contact-box h3{
+    display: flex;
+    flex-direction: column;
+    min-width: 370px;
+    color: #ffffff;
+    font-size: 70px;  
+    font-weight: bold;
+    margin: 50px 0 40px 0;
+}
+.contact-box h3 span{
+    display: flex;
+    justify-content: end;
+    color: #E3EC39;   
+}
+.contact-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 355px;
+    height: 626px;
+    background-color:#FFFFFF;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.box-name,
+.box-surname,
+.box-email,
+.box-select,
+.box-textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-name label,
+.box-surname label,
+.box-email label,
+.box-select label,
+.box-textarea label{
+    font-size: 18px;
+    margin-bottom: 11px;
+}
+.box-name{
+    margin-top: 33px;
+}
+.box-name input::placeholder,
+.box-surname input::placeholder,
+.box-email input::placeholder,
+.box-textarea input::placeholder{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+.contact-box form input{
+    width: 290px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    border: 1px solid gray;
+}
+.box-select select{
+    background-color: #c4c4c4;
+    width: 290px;
+    height: 30px;
+    border-radius: 5px;
+}
+.box-textarea textarea{
+    background-color: #c4c4c4;
+    width: 292px;
+    height: 132px;
+    border-radius: 10px;
+}
+.box-textarea textarea::placeholder{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.button-contact{
+    display: block;
+    width: 75px;
+    height: 35px;
+    margin: 0 auto;
+    font-weight: bold;
+    border: none;
+    background-color: #D5DD3C;
+    border-radius: 6px;
+}
+.activities-box{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.activities-box h3{
+    display: flex;
+    flex-direction: column;
+    min-width: 330px;
+    color: #ffffff;
+    font-size: 70px;  
+    font-weight: bold;
+    margin: 50px 0 40px 0;
+}
+.activities-box h3 span{
+    display: flex;
+    justify-content: end;
+    color: #E3EC39;  
+}
+.list-activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+.list-activities img{
+    position: absolute;
+    min-width: 350px;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    z-index: 1;
+    filter: brightness(60%);
+    object-fit: cover;
+}
+.list-activities h4{
+    z-index: 2;
+    color:#FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: hsla(0, 0%, 7%, 0.664);
+}
+.memberships-box{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.memberships-box h3{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    color: #ffffff;
+    font-size: 70px;  
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.memberships-box h3 span{
+    display: flex;
+    justify-content: end;
+    color: #E3EC39;  
+}
+.list-memberships{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+.classic{
+    order: 2;
+}
+.black-mem{
+    order: 1;
+}
+.only-classes{
+    order: 3;
+}
+.list-memberships img{
+    position: absolute;
+    min-width: 350px;
+    width: 350px;
+    height: 400px;
+    border-radius: 30px;
+    z-index: 1;
+    filter: brightness(40%);
+    object-fit: cover;
+}
+.list-memberships h4{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #D5DD3C;
+    z-index: 2;
+}
+.list-memberships ul{
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 45px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+.only-classes ul{
+    margin-bottom: 45px;
+}
+.list-memberships ul li{
+    margin-bottom: 20px;
+}
+.story-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.story-box h3{
+    display: flex;
+    flex-direction: column;
+    min-width: 310px;
+    color: #ffffff;
+    font-size: 70px;  
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.story-box h3 span{
+    display: flex;
+    justify-content: end;
+    color: #E3EC39;  
+}
+.historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 160px;
+    border-radius: 12px;
+    background-color: #d9d9d9;
+    padding-top: 10px;
+}
+.historia p{
+    text-align: center;
+    font-size: 14px;
+    color: #535353;
+    margin-bottom: 15px;
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+   .buttons-login-aside{
+        max-width: 650px;
+    }
+    .main-pic .mobilepic{
+        object-position:  25% 20%;
+    }
+    .main-pic .text h2{
+        min-width: 500px;
+        max-width: 685px;
+        font-size: 100px; 
+        margin-top: 100px;
+    }
+    .main-pic .text .image-text{
+        max-width: 600px;
+        margin-bottom: 115px;
+        font-size: 22px;
+    } 
+    .features-box{
+        width: 70vw;
+        max-width: 715px;
+        min-width: 601px;
+    }
+    .features-box h3{
+        font-size: 100px;
+        min-width: 470px;
+    }
+    .feature-list-cont{
+        width: 100%;
+    }
+    .list-features{
+        width: 75vw;
+        max-width: 711px;
+        min-width: 500px;
+        height: 458px;
+    }
+    .list-features img{
+        width: 75vw;
+        max-width: 711px;
+        min-width: 500px;
+        height: 458px;
+    }
+    .list-features h4{
+        max-width: 700px;
+        min-width: 300px;
+        font-size: 70px;
+    }
+    .contactsuggestion h4{
+        width: 70vw;
+        max-width: 700px;
+        min-width: 450px;
+        font-size: 70px;
+    }
+    .list-features p{
+        width: 70vw;
+        min-width: 450px;
+        text-align: center;
+        font-size: 45px;
+    }
+    .contact-box{
+        width: 70vw;
+        max-width: 715px;
+        min-width: 601px;
+    }
+    .contact-box h3{
+        min-width: 550px;
+        font-size: 95px; 
+    }
+    .contact-box form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 75vw;
+        max-width: 670px;
+        min-width: 550px;
+        height: 631px;
+        justify-content: space-around;
+    }
+    .box-name,
+    .box-surname,
+    .box-email,
+    .box-select,
+    .box-textarea{
+        align-items: start;
+    }
+    .box-name,
+    .box-surname{
+        margin-top: 47px;
+    }
+    .box-name input::placeholder,
+    .box-surname input::placeholder,
+    .box-email input::placeholder,
+    .box-textarea input::placeholder{
+        text-align: start;
+    }
+    .contact-box form input{
+        width: 240px;
+        height: 35px;
+    }
+    .box-select select{
+        width: 240px;
+        height: 38px;
+    }
+    .box-textarea{
+        align-items: center;
+        flex: 100%;
+    }
+    .box-textarea textarea{
+        width: 60vw;
+        max-width: 566px;
+        min-width: 500px;
+        height: 156px;
+    }
+    .box-textarea label{
+        align-self: flex-start;
+        margin-left: 50px;
+    }
+    .activities-box{
+        width: 70vw;
+        max-width: 711px;
+        min-width: 601px;
+    }
+    .activities-box h3{
+        min-width: 480px;
+        font-size: 95px;  
+    }
+    .list-activities{
+        width: 75vw;
+        max-width: 711px;
+        min-width: 500px;
+        height: 399px;
+    }
+    .list-activities img{
+        width: 75vw;
+        max-width: 711px;
+        min-width: 500px;
+        height: 399px;
+    }
+    .list-activities h4{
+        font-size: 85px;
+        padding: 10px;
+    }
+    .functional h4{
+        font-size: 75px;
+    }
+    .memberships-box{
+        width: 70vw;
+        max-width: 711px;
+        min-width: 601px;
+    }
+    .memberships-box h3{
+        min-width: 520px;
+        font-size: 85px;  
+    }
+    .list-memberships{
+        width: 75vw;
+        max-width: 711px;
+        min-width: 500px;
+        height: 390px;
+    }
+    .list-memberships img{
+        width: 75vw;
+        max-width: 711px;
+        min-width: 500px;
+        height: 390px;
+        object-position:  25% 20%;
+    }
+    .list-memberships h4{
+        width: 358px;
+        font-size: 40px;
+    }
+    .story-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .story-box h3{
+        min-width: 450px;
+        font-size: 95px;  
+    }
+    .historia{
+        height: 191px;
+
+        width: 70vw;
+        max-width: 674px;
+        min-width: 500px;
+    }
+    .historia p{
+        font-size: 22px; 
+    }
+}
+@media screen and (min-width: 1025px){
+    .mobilepic,
+    .buttons-login-aside{
+        display:none  ;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100vw;
+    }
+    main aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        width: 20vw;
+        height: 100vh;
+        max-height: 6000px;
+        background-color: #D5DD3C;
+        position: sticky;
+        top: 0;
+    }
+    main aside nav{
+        height: 70vh;
+        max-height: 550px;
+        padding-top: 10px;
+    }
+    main aside nav ul li{
+        margin-bottom: 0;
+    }
+    main aside nav ul li a{ 
+        color: #000000;
+        font-size: 28px;        
+    }
+    @keyframes sidebarhover {
+        0%{
+            background-color: #000000;
+        }
+        15%{
+            background-color: #000000;
+            color: #D5DD3C; 
+        }
+        50%{
+            background-color: #000000;
+            color: #D5DD3C; 
+        }
+        100%{
+            background-color: #000000;
+            color: #D5DD3C; 
+        }
+    }
+    main aside nav ul li a:hover{
+        animation-name: sidebarhover;
+        animation-duration: 3s;
+    }
+    .address-desktop{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 24px;
+        color: #000000;
+    }
+    .address-desktop p{
+        display: block;
+        color: #000000;
+    }
+    .address-side,
+    .telephone-side{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .telephone-side img{
+        width: 38px;
+        height: 38px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+    .first-section{
+        width: 80vw;
+    }
+    .main-pic{
+        position: relative;
+        display: block;
+    }
+    .ipadplus_pic{
+        display: block;
+        position: absolute;
+        width: 80vw;
+        height: 81.5vh;
+        filter: brightness(50%);
+        object-fit: cover;
+        object-position:  25% 20%;
+        z-index: 1;
+    }
+    .main-pic .text h2{
+        min-width: 500px;
+        max-width: 685px;
+        font-size: 100px; 
+        margin-top: 100px;
+    }
+    .main-pic .text .image-text{
+        max-width: 600px;
+        margin-bottom: 115px;
+        font-size: 22px;
+    } 
+    .features-box{
+        width: 70vw;
+        max-width: 1118px;
+        min-width: 900px;
+    }
+    .features-box h3{
+        font-size: 100px;
+        min-width: 470px;
+    }
+    .feature-list-cont{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 35px;
+        flex-wrap: wrap;
+    }
+    .list-features{
+        width: 451px;
+        height: 288px;
+    }
+    .list-features img{
+        width: 451px;
+        height: 288px;
+    }
+    .contact-box{
+        width: 70vw;
+        max-width: 1118px;
+        min-width: 780px;
+    }
+    .contact-box h3{
+        font-size: 100px;
+        min-width: 560px;
+    }
+    .contact-box form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70vw;
+        max-width: 1032px;
+        min-width: 780px;
+        height: 351px;
+        padding: 15px 0 15px 0;
+    }
+    .box-name,
+    .box-surname,
+    .box-email,
+    .box-select,
+    .box-textarea{
+        align-items: start;
+    }
+    .box-name{
+        margin-top: 0;
+    }
+    .box-name input::placeholder,
+    .box-surname input::placeholder,
+    .box-email input::placeholder,
+    .box-textarea input::placeholder{
+        text-align: start;
+    }
+    .contact-box form input{
+        width: 190px;
+        height: 35px;
+    }
+    .box-select select{
+        width: 195px;
+        height: 38px;
+    }
+    .box-textarea{
+        align-items: center;
+        width: 68vw;
+        max-width: 1010px;
+        min-width: 500px;
+        margin-bottom: 5px;
+        padding-right: 10px;
+     
+    }
+    .box-textarea textarea{
+        width: 65vw;
+        max-width: 935px;
+        min-width: 500px;
+    }
+    .box-textarea label{
+        align-self: self-start;
+    }
+    .button-contact{
+        justify-content: center;
+    }
+    .activities-box{
+        width: 70vw;
+        max-width: 1016px;
+        min-width: 780px;
+    }
+    .activities-box h3{
+        font-size: 100px;
+        min-width: 510px;
+    }
+    .list-activities{
+        width: 306px;
+        height: 187px;
+    }
+    .list-activities img{
+        max-width: 306px;
+        min-width: 306px;
+        height: 187px;
+    }
+    .list-activities-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        width: 70vw;
+        max-width: 1016px;
+        min-width: 780px;
+        gap: 40px;
+    }
+    .crossfit{
+        order: 1;
+    }
+    .box{
+        order: 2;
+    }
+    .memberships-box{
+        width: 70vw;
+        max-width: 1016px;
+        min-width: 780px;
+    }
+    .memberships-box h3{
+        font-size: 100px;
+        min-width: 670px;
+    }
+    .list-memberships{
+        width: 480px;
+        height: 575px;
+    }
+    .list-memberships img{
+        max-width: 480px;
+        min-width: 480px;
+        height: 575px;
+        border-radius: 0;
+    }
+    .story-box{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        width: 70vw;
+        max-width: 971px;
+        min-width: 780px;
+    }
+    .story-box h3{
+        font-size: 60px;
+    }
+    .historia{
+        width: 666px;
+    }
+}
