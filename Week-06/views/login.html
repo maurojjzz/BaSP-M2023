@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="../../Week-06/css/reset.css" />
+        <link rel="stylesheet" href="../../Week-06/css/common.css" />
+        <link rel="stylesheet" href="../../Week-06/css/header.css">
+        <link rel="stylesheet" href="../../Week-06/css/main.css">
+        <link rel="stylesheet" href="../../Week-06/css/login.css">
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="logo">
+                <a href="index.html" title="Go back to Home">
+                    <img src="../../Assets/Images/radiumrocketlogo.png" alt="LOGO Radium Rocket">
+                </a>
+                <h1>Mega Rocket S.A</h1>               
+            </div>
+        </header>
+        <main class="container">
+                <form>
+                    <h2>Log In</h2>
+                    <div class="box-form">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com">
+                        <p id="email-error" class="error"></p>
+                    </div>
+                    <div class="box-form">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="********">
+                        <p id="password-error" class="error"></p>
+                    </div>
+                    <div class="box-recover">
+                        <a href="#">
+                            Forgot your password?
+                        </a>
+                    </div>
+                    <button id="btn-send" class="button-contact" >
+                        LOGIN
+                    </button>
+                </form>
+        </main>
+        <script src="../js/login.js"></script>
+    </body>
 </html>
