@@ -62,6 +62,7 @@ body{
 }
 .button-contact{
     width: 150px;
+    height: 35px;
     background: #373867;
     cursor: pointer;
     color: rgba(227, 236, 57, 0.9);
