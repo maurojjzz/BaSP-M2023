@@ -17,14 +17,13 @@ var phone=document.getElementById('phone');
 var phoneError=document.getElementById('phone-error');
 var postCode=document.getElementById('postal-code');
 var postCodeError=document.getElementById('postal-error');
+var locali=document.getElementById('locali');
+var localiError=document.getElementById('location-error');
+var address=document.getElementById('address');
+var addressError=document.getElementById('address-error');
 
-
-//to set max date in input type date
 birthDay.setAttribute('required',true);
-
-//set 
 repeatPass.disabled=true;
-
 
 email.addEventListener('blur', emailValidation);
 email.addEventListener('focus', emailChanging);
@@ -43,7 +42,11 @@ birthDay.addEventListener('focus', birthChanging);
 phone.addEventListener('blur', phoneValidation);
 phone.addEventListener('focus', phoneChanging);
 postCode.addEventListener('blur', postCodeValidation);
-postCodeError.addEventListener('focus', postCodeChanging);
+postCode.addEventListener('focus', postCodeChanging);
+locali.addEventListener('blur', locationValidation);
+locali.addEventListener('focus', locationChanging);
+address.addEventListener('blur', addressValidation);
+address.addEventListener('focus', addressChanging);
 
 function emailValidation(){
     if (!(emailExpression.test(email.value)) && email.value.length !== 0) {
@@ -327,4 +330,94 @@ function postCodeChanging(){
    postCodeError.classList.remove('box-error');
    postCodeError.textContent="";
    postCode.style.border='1px solid #5a5656';
+}
+function locationValidation(){
+   var flagLocation=true;
+   for (let i = 0; i < locali.value.length; i++) {
+      //to validate if it is a symbol
+      if(isNaN(locali.value[i])){
+         if ( !(locali.value[i].toLowerCase() >= 'a' && locali.value[i].toLowerCase() <= 'z') ){
+            flagLocation=false;
+            break;
+         }
+      } 
+   }
+   if (flagLocation) {
+      if(!(locali.value.length>3 )){
+         if(locali.value.length!==0){
+            localiError.textContent='Location needs to be more than 3 characters long';
+            localiError.classList.add('box-error');
+            locali.style.border='2px solid red';
+         }
+      }
+   }else{
+      localiError.textContent='Symbols are not allowed';
+      localiError.classList.add('box-error');
+      locali.style.border='2px solid red';
+   }  
+}
+function locationChanging(){
+   localiError.classList.remove('box-error');
+   localiError.textContent="";
+   locali.style.border='1px solid #5a5656';
+}
+//Al menos 5 caracteres con letras, números y un espacio en el medio.
+function addressValidation(){
+   var addressSplit=address.value.trim().split(' ');
+   var hasNumberr=0;
+   var hasLetter=0;
+   var hasSymbol=false
+
+   for (let i = 0; i < address.value.length; i++) {
+      if(isNaN(address.value[i])){
+         if ( !(address.value[i].toLowerCase() >= 'a' && address.value[i].toLowerCase() <= 'z') ){
+            hasSymbol=true;
+            break;
+         }
+      } 
+   }
+   if(!hasSymbol){
+      if(address.value.length > 5){
+         //line below verify if it isn't 2 parts is because there isn't a space or there's more than 1 space
+         if(!(addressSplit.length!==2)){
+            //loop each part of the split and each character to verify if it is letter or number
+            for (let i = 0; i < addressSplit.length; i++) {
+               for (let j = 0; j < addressSplit[i].length; j++) {
+                  if( isNaN(addressSplit[i][j]) ){
+                     hasLetter++;
+                  }else{
+                     hasNumberr++;
+                  }
+               }
+            }
+            if(hasLetter>0 && hasNumberr>0){
+               return true;
+            }else{
+               addressError.textContent='Address must contain numbers and letters';
+               addressError.classList.add('box-error');
+               address.style.border='2px solid red';
+            }
+
+         }else{
+            addressError.textContent='Address should only has one blank space';
+            addressError.classList.add('box-error');
+            address.style.border='2px solid red';
+         }
+      }else{
+         if(address.value.length!==0){
+            addressError.textContent='Address should be at least 5 characters';
+            addressError.classList.add('box-error');
+            address.style.border='2px solid red';
+         }
+      }
+   }else{
+      addressError.textContent='Symbols are not allowed';
+      addressError.classList.add('box-error');
+      address.style.border='2px solid red';
+   }
+}
+function addressChanging(){
+   addressError.classList.remove('box-error');
+   addressError.textContent="";
+   address.style.border='1px solid #5a5656';
 }
