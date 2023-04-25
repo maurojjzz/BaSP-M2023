@@ -21,6 +21,7 @@ var locali=document.getElementById('locali');
 var localiError=document.getElementById('location-error');
 var address=document.getElementById('address');
 var addressError=document.getElementById('address-error');
+var button = document.getElementById('btn-send');
 
 birthDay.setAttribute('required',true);
 repeatPass.disabled=true;
@@ -47,6 +48,18 @@ locali.addEventListener('blur', locationValidation);
 locali.addEventListener('focus', locationChanging);
 address.addEventListener('blur', addressValidation);
 address.addEventListener('focus', addressChanging);
+button.addEventListener('click', register);
+
+//to validate in register if pass all the validations
+var finalAddressValidation=false;
+var bothPasswordsValidation=false;
+var flagToLoginEmail=false;
+var flagNameRegister=false;
+var flagSurnameRegister=false;
+var finalDniValidation=false;
+var finalPhoneValidation=false;
+var finalLocationValidation=false;
+var finalPostalCodeValidation=false;
 
 function emailValidation(){
     if (!(emailExpression.test(email.value)) && email.value.length !== 0) {
@@ -117,11 +130,14 @@ function passValidation(){
     pass.style.border='1px solid #5a5656';
  }
 function comparePasswords(){
+   bothPasswordsValidation=false;
    if(!repeatPass.disabled){
          if(!(pass.value === repeatPass.value)){
             repeatPassError.textContent='both password must be the same';
             repeatPassError.classList.add('box-error');
             repeatPass.style.border='2px solid red';
+         }else{
+            bothPasswordsValidation=true;
          }
    }
 }
@@ -132,13 +148,13 @@ function repeatPassChanging(){
 }
 function nameValidation(){
    var cont=0;
-   var flag=false;
+   flagNameRegister=false;
    if(!hasANumber(namee.value)){
       for (let i = 0; i < namee.value.length; i++) {
          if (namee.value[i].toLowerCase() >= 'a' && namee.value[i].toLowerCase() <= 'z' ) {
             cont++;
             if(cont >=3){
-               flag=true;
+               flagNameRegister=true;
             }
          }else{
             nameError.textContent='Symbols are not allowed';
@@ -151,7 +167,7 @@ function nameValidation(){
       nameError.classList.add('box-error');
       namee.style.border='2px solid red';
    }
-   if(!flag && cont!==0){
+   if(!flagNameRegister && cont!==0){
       nameError.textContent='Name has to be at least 3 characters long';
       nameError.classList.add('box-error');
       namee.style.border='2px solid red';
@@ -163,17 +179,15 @@ function nameChanging(){
    namee.style.border='1px solid #5a5656';
 }
 
-//
-
 function surnameValidation(){
    var cont=0;
-   var flag=false;
+   flagSurnameRegister=false;
    if(!hasANumber(surname.value)){
       for (let i = 0; i < surname.value.length; i++) {
          if (surname.value[i].toLowerCase() >= 'a' && surname.value[i].toLowerCase() <= 'z' ) {
             cont++;
             if(cont >=3){
-               flag=true;
+               flagSurnameRegister=true;
             }
          }else{ 
             surnameError.textContent='Symbols are not allowed';
@@ -186,7 +200,7 @@ function surnameValidation(){
       surnameError.classList.add('box-error');
       surname.style.border='2px solid red';
    }
-   if(!flag && cont!==0){
+   if(!flagSurnameRegister && cont!==0){
       surnameError.textContent='Surname has to be at least 3 characters long';
       surnameError.classList.add('box-error');
       surname.style.border='2px solid red';
@@ -199,6 +213,7 @@ function surnameChanging(){
 }
 function dniValidation(){
    var flagValidateLetter=false;
+   finalDniValidation=false;
    //to validate if the string has a symbol or a letter
    if (!hasALetter(dni.value)) {
          for (let i = 0; i < dni.value.length; i++) {
@@ -219,6 +234,8 @@ function dniValidation(){
          dniError.textContent='dni needs to be at least 7 characters long';
          dniError.classList.add('box-error');
          dni.style.border='2px solid red';
+      }else{
+         finalDniValidation=true;
       }
    }else{
       if (dni.value.length !== 0) {
@@ -260,6 +277,7 @@ function birthChanging(){
 
 function phoneValidation(){
    var flagValidateLetter=false;
+   finalPhoneValidation=false;
    if (!hasALetter(phone.value)) {
       for (let i = 0; i < phone.value.length; i++) {
          if (isNaN(phone.value[i])) {
@@ -280,6 +298,8 @@ function phoneValidation(){
          phoneError.textContent='phone number needs to be 10 characters long';
          phoneError.classList.add('box-error');
          phone.style.border='2px solid red';
+      }else{
+         finalPhoneValidation=true;
       }
    }else{
       if (phone.value.length !== 0) {
@@ -296,6 +316,7 @@ function phoneChanging(){
 }
 function postCodeValidation(){
    var flagValidateLetter=false;
+   finalPostalCodeValidation=false;
    if (!hasALetter(postCode.value)) {
       for (let i = 0; i < postCode.value.length; i++) {
          if (isNaN(postCode.value[i])) {
@@ -316,6 +337,8 @@ function postCodeValidation(){
          postCodeError.textContent='Postal code needs to be 4 or 5 characters long';
          postCodeError.classList.add('box-error');
          postCode.style.border='2px solid red';
+      }else{
+         finalPostalCodeValidation=true;
       }
    }else{
       if (phone.value.length !== 0) {
@@ -333,6 +356,7 @@ function postCodeChanging(){
 }
 function locationValidation(){
    var flagLocation=true;
+   finalLocationValidation=false;
    for (let i = 0; i < locali.value.length; i++) {
       //to validate if it is a symbol
       if(isNaN(locali.value[i])){
@@ -349,6 +373,8 @@ function locationValidation(){
             localiError.classList.add('box-error');
             locali.style.border='2px solid red';
          }
+      }else{
+         finalLocationValidation=true;
       }
    }else{
       localiError.textContent='Symbols are not allowed';
@@ -361,13 +387,13 @@ function locationChanging(){
    localiError.textContent="";
    locali.style.border='1px solid #5a5656';
 }
-//Al menos 5 caracteres con letras, números y un espacio en el medio.
+
 function addressValidation(){
    var addressSplit=address.value.trim().split(' ');
    var hasNumberr=0;
    var hasLetter=0;
-   var hasSymbol=false
-
+   var hasSymbol=false;
+   finalAddressValidation=false;
    for (let i = 0; i < address.value.length; i++) {
       if(isNaN(address.value[i])){
          if ( !(address.value[i].toLowerCase() >= 'a' && address.value[i].toLowerCase() <= 'z') ){
@@ -391,7 +417,7 @@ function addressValidation(){
                }
             }
             if(hasLetter>0 && hasNumberr>0){
-               return true;
+               finalAddressValidation=true;
             }else{
                addressError.textContent='Address must contain numbers and letters';
                addressError.classList.add('box-error');
@@ -416,8 +442,32 @@ function addressValidation(){
       address.style.border='2px solid red';
    }
 }
+
 function addressChanging(){
    addressError.classList.remove('box-error');
    addressError.textContent="";
    address.style.border='1px solid #5a5656';
+}
+
+function register(e){
+   if(finalAddressValidation && bothPasswordsValidation && flagToLoginEmail && flagNameRegister && flagSurnameRegister && finalDniValidation && finalPhoneValidation && finalLocationValidation && finalPostalCodeValidation && birthValidation()){
+      alert('Name: '+namee.value+'\nSurname: '+surname.value+'\nDNI: '+dni.value+'\nAddress: '+ address.value+'\nEmail: '+email.value +'\nPassword: '+pass.value + '\nPhone: '+ phone.value+ '\nLocation: '+ locali.value+'\nPostal Code: '+postCode.value+'\nDate of birth: '+birthDay.value);
+   }else{
+      e.preventDefault();
+      alert("Something's wrong, correct the inputs in red");
+      //change border to those inputs who are wrong
+      if(!finalAddressValidation){address.style.border='2px solid red';}
+      if(!flagToLoginEmail){email.style.border='2px solid red';}
+      if(!flagNameRegister){namee.style.border='2px solid red';}
+      if(!flagSurnameRegister){surname.style.border='2px solid red';}
+      if(!finalDniValidation){dni.style.border='2px solid red';}
+      if(!finalPhoneValidation){phone.style.border='2px solid red';}
+      if(!finalLocationValidation){locali.style.border='2px solid red';}
+      if(!finalPostalCodeValidation){postCode.style.border='2px solid red';}
+      if(!(birthValidation())){birthDay.style.border='2px solid red';}
+      if(!bothPasswordsValidation){
+         pass.style.border='2px solid red';
+         repeatPass.style.border='2px solid red'
+      }
+   }
 }
