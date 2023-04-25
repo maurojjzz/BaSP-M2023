@@ -32,7 +32,8 @@ function passValidation(){
    if ( !deeperValidation(passwordControls) && passwordControls.length !== 0) {
       passError.classList.add('box-error');
       pass.style.border='2px solid red';
-      passError.textContent='password has to be at least 8 character long and it has to be composed by one number and one letter';
+      passError.textContent='password has to be at least 8 character long and it has to be composed'+
+      ' by one number and one letter';
    }else{
       flagToLoginPass=true;
    }

@@ -84,7 +84,8 @@ function passValidation(){
         repeatPass.value='';
         passError.classList.add('box-error');
         pass.style.border='2px solid red';
-        passError.textContent='password has to be at least 8 character long and it has to be composed by one number and one letter';
+        passError.textContent='password has to be at least 8 character long and it '+
+         +'has to be composed by one number and one letter';
     }else if(passwordControls.length === 0){
         repeatPass.disabled=true;
         repeatPass.value='';
@@ -450,8 +451,20 @@ function addressChanging(){
 }
 
 function register(e){
-   if(finalAddressValidation && bothPasswordsValidation && flagToLoginEmail && flagNameRegister && flagSurnameRegister && finalDniValidation && finalPhoneValidation && finalLocationValidation && finalPostalCodeValidation && birthValidation()){
-      alert('Name: '+namee.value+'\nSurname: '+surname.value+'\nDNI: '+dni.value+'\nAddress: '+ address.value+'\nEmail: '+email.value +'\nPassword: '+pass.value + '\nPhone: '+ phone.value+ '\nLocation: '+ locali.value+'\nPostal Code: '+postCode.value+'\nDate of birth: '+birthDay.value);
+   if(finalAddressValidation &&
+      bothPasswordsValidation &&
+      flagToLoginEmail && 
+      flagNameRegister && 
+      flagSurnameRegister && 
+      finalDniValidation && 
+      finalPhoneValidation && 
+      finalLocationValidation && 
+      finalPostalCodeValidation && 
+      birthValidation()){
+      alert('Name: '+namee.value+'\nSurname: '+surname.value+'\nDNI: '+dni.value +
+         '\nDate of birth: '+birthDay.value+'\nPhone: '+ phone.value+'\nAddress: '+ address.value+
+         + '\nLocation: '+ locali.value+'\nPostal Code: '+postCode.value+
+         '\nEmail: '+email.value +'\nPassword: '+pass.value );
    }else{
       e.preventDefault();
       alert("Something's wrong, correct the inputs in red");
