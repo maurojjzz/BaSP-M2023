@@ -461,10 +461,16 @@ function register(e){
       finalLocationValidation && 
       finalPostalCodeValidation && 
       birthValidation()){
-      alert('Name: '+namee.value+'\nSurname: '+surname.value+'\nDNI: '+dni.value +
-         '\nDate of birth: '+birthDay.value+'\nPhone: '+ phone.value+'\nAddress: '+ address.value+
-         + '\nLocation: '+ locali.value+'\nPostal Code: '+postCode.value+
-         '\nEmail: '+email.value +'\nPassword: '+pass.value );
+      alert('Name: '+namee.value+
+      '\nSurname: '+surname.value+
+      '\nDNI: '+dni.value +
+      '\nDate of birth: '+birthDay.value+
+      '\nPhone: '+ phone.value+
+      '\nAddress: '+ address.value+
+      '\nLocation: '+ locali.value+
+      '\nPostal Code: '+postCode.value+
+      '\nEmail: '+email.value +
+      '\nPassword: ********');
    }else{
       e.preventDefault();
       alert("Something's wrong, correct the inputs in red");

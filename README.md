@@ -46,7 +46,7 @@ This week we had to create two html pages and added to index.html. One is login.
 ### Sign-Up Requirements
     ● NAME:
         Composed by letters and must have at least 3 letters.
-    ● APELLIDO:
+    ● SURNAME:
         Composed by letters and must have at least 3 letters.
     ● DNI:
         Only numbers and it should have at least 7 numbers.
