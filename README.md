@@ -35,5 +35,39 @@ This week, exercises were providen to us to solve using javaScript composed by:
 
 Link to access: https://maurojjzz.github.io/BaSP-M2023/Week-05/index.html
 
+## Week 06
+This week we had to create two html pages and added to index.html. One is login.html and the other is sign-up.html. Both pages had to be responsive and it follows a few inputs requirements that must be validated.
+### Login Requirements
+    ● EMAIL:
+        Must have a valid email format.
+    ● PASSWORD:
+        Composed by numbers and letters.
+
+### Sign-Up Requirements
+    ● NAME:
+        Composed by letters and must have at least 3 letters.
+    ● APELLIDO:
+        Composed by letters and must have at least 3 letters.
+    ● DNI:
+        Only numbers and it should have at least 7 numbers.
+    ● DATE OF BIRTH:
+        With format dd/mm/yyyy
+    ● PHONE NUMBER:
+        Only numbers and should contain 10 numbers.
+    ● ADDRESS:
+        At least 5 chars with at least a letter, a number and a blank space in the middle.
+    ● LOCATION:
+        Should have at least 3 chars composed by numbers and letters with no symbols.
+    ● POSTAL CODE:
+        Only numbers and should have between 4 or 5 numbers.
+    ● PASSWORD:
+        At least 8 chars composed by numbers and letter.
+    ● REPEAT PASSWORD:
+        At least 8 chars composed by numbers and letter.
+
+Link to access: https://maurojjzz.github.io/BaSP-M2023/Week-06/views/index.html
+
+
+    
 ## Author
 - Mauro Jimenez
