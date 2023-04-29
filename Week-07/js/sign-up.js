@@ -470,7 +470,7 @@ function register(e){
       '\nLocation: '+ locali.value+
       '\nPostal Code: '+postCode.value+
       '\nEmail: '+email.value +
-      '\nPassword: ********');
+      '\nPassword: '+'*'.repeat(pass.value.length));
    }else{
       e.preventDefault();
       alert("Something's wrong, correct the inputs in red");

@@ -11,6 +11,7 @@ email.addEventListener('blur', emailValidation);
 email.addEventListener('focus', emailChanging);
 pass.addEventListener('blur', passValidation);
 pass.addEventListener('focus', passChanging);
+
 btn.addEventListener('click', login)
 
 function emailValidation(){
@@ -74,9 +75,32 @@ function passChanging(){
 }
 function login(e){
    if(flagToLoginEmail && flagToLoginPass){
-      alert('Email: '+ email.value+'\nPassword: ********');
+      e.preventDefault();
+      var url='https://api-rest-server.vercel.app/login';
+      var queryParams= 'email='+email.value+'&password='+pass.value;
+      
+      var request= url+'?'+queryParams;
+
+      fetch(request)
+      .then(function(response){
+         return response.json();
+      })
+      .then(function(data){
+         if(!data.success){
+            throw new Error(data.msg);
+         }else{
+            alert(data.msg);
+         }
+      })
+      .catch(function(error){
+         alert(error);
+      })
+
    }else{
       e.preventDefault();
-      alert("Something's wrong. Check your email and password again");
+      alert('Something`s wrong. Check your email and password again');
    }
 }
+
+
+
