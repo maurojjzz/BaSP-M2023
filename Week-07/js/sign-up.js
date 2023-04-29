@@ -481,7 +481,6 @@ function register(e){
             '&password='+pass.value;
       
          var request= url+'?'+queryParams;
-
          fetch(request)
          .then(function(response){
             return response.json();
@@ -501,7 +500,19 @@ function register(e){
                   '\nPostal Code: '+postCode.value+
                   '\nEmail: '+email.value +
                   '\nPassword: '+'*'.repeat(pass.value.length));
-            }
+
+                  localStorage.setItem('name',namee.value);
+                  localStorage.setItem('lastName',surname.value);
+                  localStorage.setItem('dni',dni.value);
+                  localStorage.setItem('dob',birthDay.value);
+                  localStorage.setItem('phone',phone.value);
+                  localStorage.setItem('address',address.value);
+                  localStorage.setItem('city',locali.value);
+                  localStorage.setItem('zip',postCode.value);
+                  localStorage.setItem('email',email.value);
+                  localStorage.setItem('password',pass.value);
+
+               }
          })
          .catch(function(error){
             alert(error);
@@ -527,4 +538,51 @@ function register(e){
          repeatPass.style.border='2px solid red'
       }
    }
+}
+
+window.onload =function() {
+
+   var stName= localStorage.getItem('name');
+   if(stName !== null){
+      namee.value=stName;
+   }
+   var stSurname= localStorage.getItem('lastName');
+   if(stSurname !== null){
+      surname.value=stSurname;
+   }
+   var stDni= localStorage.getItem('dni');
+   if(stDni !== null){
+      dni.value=stDni;
+   }
+   var stDoB= localStorage.getItem('dob');
+   if(stDoB !== null){
+      birthDay.value=stDoB;
+   }
+   var stPhone= localStorage.getItem('phone');
+   if(stPhone !== null){
+      phone.value=stPhone;
+   }
+   var stAddress= localStorage.getItem('address');
+   if(stAddress !== null){
+      address.value=stAddress;
+   }
+   var stCity= localStorage.getItem('city');
+   if(stCity !== null){
+      locali.value=stCity;
+   }
+   var stZip= localStorage.getItem('zip');
+   if(stZip !== null){
+      postCode.value=stZip;
+   }
+   var stEmail= localStorage.getItem('email');
+   if(stEmail !== null){
+      email.value=stEmail;
+   }
+   var stPass= localStorage.getItem('password');
+   if(stPass !== null){
+      pass.value=stPass;
+      repeatPass.value=stPass;
+
+   }
+   
 }
