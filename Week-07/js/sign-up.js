@@ -84,7 +84,7 @@ function passValidation(){
         repeatPass.value='';
         passError.classList.add('box-error');
         pass.style.border='2px solid red';
-        passError.textContent='password has to be at least 8 character long and it '+
+        passError.textContent='password has to be at least 8 character long and it '
          +'has to be composed by one number and one letter';
     }else if(passwordControls.length === 0){
         repeatPass.disabled=true;
@@ -461,16 +461,54 @@ function register(e){
       finalLocationValidation && 
       finalPostalCodeValidation && 
       birthValidation()){
-      alert('Name: '+namee.value+
-      '\nSurname: '+surname.value+
-      '\nDNI: '+dni.value +
-      '\nDate of birth: '+birthDay.value+
-      '\nPhone: '+ phone.value+
-      '\nAddress: '+ address.value+
-      '\nLocation: '+ locali.value+
-      '\nPostal Code: '+postCode.value+
-      '\nEmail: '+email.value +
-      '\nPassword: '+'*'.repeat(pass.value.length));
+         e.preventDefault();
+         //date of birth is yyyy/mm/dd must be mm/dd/yyyy so lines down re-format the input date
+         var dateEl = birthDay.value.split('-')
+         var formattedDate = dateEl[1] + '/' + dateEl[2] + '/' + dateEl[0]
+
+         //http petition
+         var url='https://api-rest-server.vercel.app/signup';
+         var queryParams= 
+            'name='+namee.value+
+            '&lastName='+surname.value+
+            '&dni='+dni.value+
+            '&dob='+formattedDate+
+            '&phone='+phone.value+
+            '&address='+address.value+
+            '&city='+locali.value+
+            '&zip='+postCode.value+
+            '&email='+email.value+
+            '&password='+pass.value;
+      
+         var request= url+'?'+queryParams;
+
+         fetch(request)
+         .then(function(response){
+            return response.json();
+         })
+         .then(function(data){
+            if(!data.success){
+               throw new Error(data.msg);
+            }else{
+               alert(data.msg);
+               alert('Name: '+namee.value+
+                  '\nSurname: '+surname.value+
+                  '\nDNI: '+dni.value +
+                  '\nDate of birth: '+birthDay.value+
+                  '\nPhone: '+ phone.value+
+                  '\nAddress: '+ address.value+
+                  '\nLocation: '+ locali.value+
+                  '\nPostal Code: '+postCode.value+
+                  '\nEmail: '+email.value +
+                  '\nPassword: '+'*'.repeat(pass.value.length));
+            }
+         })
+         .catch(function(error){
+            alert(error);
+         })
+      
+         
+
    }else{
       e.preventDefault();
       alert("Something's wrong, correct the inputs in red");

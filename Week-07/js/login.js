@@ -90,6 +90,7 @@ function login(e){
             throw new Error(data.msg);
          }else{
             alert(data.msg);
+            alert('Email: '+ email.value+'\nPassword: '+'*'.repeat(pass.value.length));
          }
       })
       .catch(function(error){
