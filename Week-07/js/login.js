@@ -89,12 +89,38 @@ function login(e){
          if(!data.success){
             throw new Error(data.msg);
          }else{
-            alert(data.msg);
-            alert('Email: '+ email.value+'\nPassword: '+'*'.repeat(pass.value.length));
+            modal.style.display='flex';
+            var modalInterior=document.getElementById('modal-interior');
+            var modaltitle= document.createElement('h2');
+            modaltitle.classList.add('modal-title');
+            modaltitle.appendChild(document.createTextNode(data.msg));
+            modaltitle.style.color='#FFC107';
+            var modalText=document.createElement('p');
+            modalText.appendChild(document.createTextNode('Email: '+ email.value+
+               '\nPassword: '+'*'.repeat(pass.value.length)));
+            modalText.classList.add('modal-paragraph');
+            var modalImg=document.createElement('img');
+            modalImg.src='../../Assets/Images/iconsuccessful.png';
+            modalImg.alt='Icon successfull movement';
+            modalImg.classList.add('modal-img');
+            modalInterior.insertBefore(modaltitle,modalInterior.firstChild);
+            modalInterior.insertBefore(modalText,modaltitle.nextSibling);
+            modalInterior.insertBefore(modalImg,modaltitle.nextSibling);
          }
       })
       .catch(function(error){
-         alert(error);
+         modal.style.display='flex';
+         var modalInterior=document.getElementById('modal-interior');
+         var modaltitle= document.createElement('h2');
+         modaltitle.classList.add('modal-title');
+         modaltitle.appendChild(document.createTextNode(error));
+         modaltitle.style.color='#FF0000';
+         modalInterior.insertBefore(modaltitle,modalInterior.firstChild);
+
+         var modalImg=document.createElement('div');
+         modalImg.appendChild(document.createTextNode('+'));
+         modalImg.classList.add('modal-img-error');
+         modalInterior.insertBefore(modalImg,modaltitle.nextSibling);
       })
 
    }else{
@@ -103,5 +129,20 @@ function login(e){
    }
 }
 
+var modal=document.querySelector('.modal-container');
+var closeModalButton = document.getElementById('close-modal').addEventListener('click',hideModal);
 
+function hideModal(){
+   modal.style.display='none';
+   var modalInterior=document.getElementById('modal-interior');
+   var button= document.getElementById('close-modal');
+   while (modalInterior.firstElementChild!==button) {
+      modalInterior.removeChild(modalInterior.firstChild);
+   }
+}
 
+document.addEventListener("keydown", function(event) {
+   if (event.key === "Enter") {
+     event.preventDefault();
+   }
+ });
