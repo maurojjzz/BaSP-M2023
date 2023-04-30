@@ -489,33 +489,101 @@ function register(e){
             if(!data.success){
                throw new Error(data.msg);
             }else{
-               alert(data.msg);
-               alert('Name: '+namee.value+
-                  '\nSurname: '+surname.value+
-                  '\nDNI: '+dni.value +
-                  '\nDate of birth: '+birthDay.value+
-                  '\nPhone: '+ phone.value+
-                  '\nAddress: '+ address.value+
-                  '\nLocation: '+ locali.value+
-                  '\nPostal Code: '+postCode.value+
-                  '\nEmail: '+email.value +
-                  '\nPassword: '+'*'.repeat(pass.value.length));
+               modal.style.display='flex';
+               var modalInterior=document.getElementById('modal-interior');
+               var modaltitle= document.createElement('h2');
+               modaltitle.classList.add('modal-title');
+               modaltitle.appendChild(document.createTextNode(data.msg));
+               modaltitle.style.color='#FFC107';
+                  
+               var divConteinerData = document.createElement('div');
+               divConteinerData.classList.add('div-contenedor-data');
 
-                  localStorage.setItem('name',namee.value);
-                  localStorage.setItem('lastName',surname.value);
-                  localStorage.setItem('dni',dni.value);
-                  localStorage.setItem('dob',birthDay.value);
-                  localStorage.setItem('phone',phone.value);
-                  localStorage.setItem('address',address.value);
-                  localStorage.setItem('city',locali.value);
-                  localStorage.setItem('zip',postCode.value);
-                  localStorage.setItem('email',email.value);
-                  localStorage.setItem('password',pass.value);
+               var divName=document.createElement('div');
+               divName.classList.add('conteiner-data-child');
+               divName.appendChild(document.createTextNode('NAME: '+namee.value));  
+               divConteinerData.appendChild(divName);
 
-               }
+               var divLastName=document.createElement('div');
+               divLastName.classList.add('conteiner-data-child');
+               divLastName.appendChild(document.createTextNode('SURNAME: '+surname.value));  
+               divConteinerData.appendChild(divLastName);
+                  
+               var divDni=document.createElement('div');
+               divDni.classList.add('conteiner-data-child');
+               divDni.appendChild(document.createTextNode('DNI: '+dni.value));  
+               divConteinerData.appendChild(divDni);
+
+               var divDob=document.createElement('div');
+               divDob.classList.add('conteiner-data-child');
+               divDob.appendChild(document.createTextNode('DATE OF BIRTH: '+birthDay.value));  
+               divConteinerData.appendChild(divDob);
+
+               var divPhone=document.createElement('div');
+               divPhone.classList.add('conteiner-data-child');
+               divPhone.appendChild(document.createTextNode('PHONE: '+ phone.value));  
+               divConteinerData.appendChild(divPhone);
+
+               var divAddress=document.createElement('div');
+               divAddress.classList.add('conteiner-data-child');
+               divAddress.appendChild(document.createTextNode('ADDRESS: '+ address.value));  
+               divConteinerData.appendChild(divAddress);
+
+               var divCity=document.createElement('div');
+               divCity.classList.add('conteiner-data-child');
+               divCity.appendChild(document.createTextNode('CITY: '+ locali.value));  
+               divConteinerData.appendChild(divCity);
+
+               var divZip=document.createElement('div');
+               divZip.classList.add('conteiner-data-child');
+               divZip.appendChild(document.createTextNode('POSTAL CODE: '+postCode.value));  
+               divConteinerData.appendChild(divZip);
+
+               var divEmail=document.createElement('div');
+               divEmail.classList.add('conteiner-data-child');
+               divEmail.appendChild(document.createTextNode('EMAIL:'+email.value ));  
+               divConteinerData.appendChild(divEmail);
+
+               var divPass=document.createElement('div');
+               divPass.classList.add('conteiner-data-child');
+               divPass.appendChild(document.createTextNode('PASSWORD: '+'*'.repeat(pass.value.length) ));  
+               divConteinerData.appendChild(divPass);
+
+               var modalImg=document.createElement('img');
+               modalImg.src='../../Assets/Images/iconsuccessful.png';
+               modalImg.alt='Icon successfull movement';
+               modalImg.classList.add('modal-img');
+               modalInterior.insertBefore(modaltitle,modalInterior.firstChild);
+               modalInterior.insertBefore(divConteinerData,modaltitle.nextSibling);
+
+               modalInterior.insertBefore(modalImg,modaltitle.nextSibling);
+
+               localStorage.setItem('name',namee.value);
+               localStorage.setItem('lastName',surname.value);
+               localStorage.setItem('dni',dni.value);
+               localStorage.setItem('dob',birthDay.value);
+               localStorage.setItem('phone',phone.value);
+               localStorage.setItem('address',address.value);
+               localStorage.setItem('city',locali.value);
+               localStorage.setItem('zip',postCode.value);
+               localStorage.setItem('email',email.value);
+               localStorage.setItem('password',pass.value);
+
+            }
          })
          .catch(function(error){
-            alert(error);
+            modal.style.display='flex';
+            var modalInterior=document.getElementById('modal-interior');
+            var modaltitle= document.createElement('h2');
+            modaltitle.classList.add('modal-title');
+            modaltitle.appendChild(document.createTextNode(error));
+            modaltitle.style.color='#FF0000';
+            modalInterior.insertBefore(modaltitle,modalInterior.firstChild);
+
+            var modalImg=document.createElement('div');
+            modalImg.appendChild(document.createTextNode('+'));
+            modalImg.classList.add('modal-img-error');
+            modalInterior.insertBefore(modalImg,modaltitle.nextSibling);
          })
       
          
@@ -586,3 +654,22 @@ window.onload =function() {
    }
    
 }
+
+var modal=document.querySelector('.modal-container');
+var closeModalButton = document.getElementById('close-modal').addEventListener('click',hideModal);
+
+function hideModal(){
+   modal.style.display='none';
+   var modalInterior=document.getElementById('modal-interior');
+   var button= document.getElementById('close-modal');
+   while (modalInterior.firstElementChild!==button) {
+      modalInterior.removeChild(modalInterior.firstChild);
+   }
+}
+
+document.addEventListener("keydown", function(event) {
+   if (event.key === "Enter") {
+     event.preventDefault();
+   }
+ });
+
