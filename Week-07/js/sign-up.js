@@ -590,7 +590,17 @@ function register(e){
 
    }else{
       e.preventDefault();
-      alert("Something's wrong, correct the inputs in red");
+      modal.style.display='flex';
+      var modalInterior=document.getElementById('modal-interior');
+      var modaltitle= document.createElement('h2');
+      modaltitle.classList.add('modal-title');
+      modaltitle.appendChild(document.createTextNode("Something's wrong, correct the inputs in red"));
+      modaltitle.style.color='#FF0000';
+      modalInterior.insertBefore(modaltitle,modalInterior.firstChild);
+      var modalImg=document.createElement('div');
+      modalImg.appendChild(document.createTextNode('+'));
+      modalImg.classList.add('modal-img-error');
+      modalInterior.insertBefore(modalImg,modaltitle.nextSibling);
       //change border to those inputs who are wrong
       if(!finalAddressValidation){address.style.border='2px solid red';}
       if(!flagToLoginEmail){email.style.border='2px solid red';}

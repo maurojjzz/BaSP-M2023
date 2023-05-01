@@ -125,7 +125,17 @@ function login(e){
 
    }else{
       e.preventDefault();
-      alert('Something`s wrong. Check your email and password again');
+      modal.style.display='flex';
+      var modalInterior=document.getElementById('modal-interior');
+      var modaltitle= document.createElement('h2');
+      modaltitle.classList.add('modal-title');
+      modaltitle.appendChild(document.createTextNode('Something`s wrong. Check your email and password again'));
+      modaltitle.style.color='#FF0000';
+      modalInterior.insertBefore(modaltitle,modalInterior.firstChild);
+      var modalImg=document.createElement('div');
+      modalImg.appendChild(document.createTextNode('+'));
+      modalImg.classList.add('modal-img-error');
+      modalInterior.insertBefore(modalImg,modaltitle.nextSibling);
    }
 }
 
