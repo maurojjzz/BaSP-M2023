@@ -16,6 +16,7 @@
 }
 .hambuger-menu{
     margin-right:35px;
+    cursor: pointer;
 }
 .buttons-login{
     display: none;
