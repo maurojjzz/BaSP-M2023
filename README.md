@@ -67,7 +67,11 @@ This week we had to create two html pages and added to index.html. One is login.
 
 Link to access: https://maurojjzz.github.io/BaSP-M2023/Week-06/views/index.html
 
+## Week 07
 
-    
+This week we had to addapt the project with HTTP Request using promises and fetch to connect with a giving login and sign-up API that we have to manage to show the success and error messages in the javaScript file.
+
+Link to access: https://maurojjzz.github.io/BaSP-M2023/Week-07/views/index.html   
+ 
 ## Author
 - Mauro Jimenez
